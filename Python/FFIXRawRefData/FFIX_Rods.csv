@@ -1,0 +1,8 @@
+Name,Attack,Element,Abilities,Available,Cost
+Rod,11,None,CurePanaceaProtect,"Initial: DaggerBuy: Dali, Lindblum (disc 1)Find: Ipsen's Castle",260 gil
+Mythril Rod,14,None,LifeSilenceShell,"Buy: Summit Station, Treno (disc 2), Cleyra, Esto Gaza (before Desert Palace), Ipsen's Castle",560 gil
+Stardust Rod,16,Halves Shadow damage.,Ability UpReflectFloat,"Steal: ZornBuy: Lindblum (disc 2), Dragon's Gate, Fossil Roo, Conde Petie, Black Mage Village (discs 2 & 3), Alexandria, Treno (disc 3)",760 gil
+Healing Rod,23,None,HealerCuraLife,"Find: Iifa Tree.Buy: Alexandria, Treno (disc 3), Lindblum (disc 3), Oeilvert Mogshop, Desert Palace (Mogshop)",1770 gil
+Asura's Rod,27,Holy,MiniConfuseSilence,"Buy: Esto Gaza (after Desert Palace), Daguerreo (disc 3)",3180 gil
+Wizard Rod,31,None,CuragaProtectShell,Steal: KrakenBuy: Black Mage Village (disc 4),3990 gil
+Whale Whisker,36,None,CuragaLife,"Find: Chocograph 18, Ocean",—

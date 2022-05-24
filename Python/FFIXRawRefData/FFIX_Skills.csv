@@ -1,0 +1,9 @@
+Name,Effect,Learned From,AP,MP
+Flee,Instantly escape from battle at the cost of 10% of the gil the party would have won from the battle.,"Dagger, Mage Masher, Zorlin Shape, Ultima Weapon, Germinas Boots",40,0
+Detect,"Shows what items the enemy has to Steal, listed from the rarest to the most common.","Mage Masher, Orichalcon",40,0
+What's That!?,"Causes enemies to turn around, resetting their ATB bars and allowing the characters perform a back attack on them.",Butterfly Sword,40,2
+Soul Blade,"Inflicts a status ailment on an opponent. The status ailment inflicted is the same as whatever status Zidane's current thief sword carries. 99% accuracy with thief swords, but always misses with daggers.",The Ogre,35,6
+Annoy,Inflict Trouble on an enemy. 50% base accuracy.,"Gladius, Sargatanas",50,4
+Sacrifice,Zidane reduces his HP and MP to 0 and fully restores the other party members HP and MP.,"Exploda, Masamune",55,32
+Lucky Seven,"If Zidane's current HP ends in 7, randomly inflicts 7, 77, 777 or 7777 damage to a single enemy. If not, it inflicts 1 damage to the enemy.","Gladius, Exploda, Rune Tooth, The Tower, Thief Hat",85,6
+Thievery,"Inflicts damage to a single enemy. Damage = [(# of successful Steals * Zidane's Speed) / 2]. Steals done by Blank, Marcus, and Cinna count.","Angel Bless, The Tower",100,8

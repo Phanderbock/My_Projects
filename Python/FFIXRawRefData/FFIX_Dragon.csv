@@ -1,0 +1,9 @@
+Name,Effect,Learned From,AP,MP
+Lancer,Physical attack that drains MP equal to 1/16 of the damage done. Damage is 120% of normal attack.,"Partisan, Dragon Wrist, Coral Ring",20,10
+Reis's Wind,Casts Regen on all party members.,"Mythril Spear, Holy Lance, Gold Helm, Angel Earrings",40,12
+Dragon Breath,Reduces all enemies' HP based on target's max HP minus current HP.,Dragon's Hair,205,78
+White Draw,Restores a small amount of MP to all party members between 0 and the enemy's level *2 - 1.,"Ice Lance, Kain's Lance, Emerald",90,36
+Luna,"Inflicts Berserk on all allies and enemies, unless immune.",Trident,30,12
+Six Dragons,"For each character, will do one of the following: Restore all HP (20%) Restore all MP (20%) Restore all HP and MP (10%) Reduce HP to 1 (15%) Reduce MP to 1 (15%) Reduce HP and MP to 1 (20%)",Heavy Lance,25,28
+Cherry Blossom,Deals non-elemental magic damage to all enemies. Damage is 150% of normal attack.,"Obelisk, Kain's Lance",40,46
+Dragon's Crest,"Deals fixed damage to a single enemy that ignores Protect and Defense. Damage is equal to the square of the number of dragons killed. Therefore, if the player kills 100 dragons, it deals 9999 damage (100x100=9999 max).","Holy Lance, Kain's Lance",45,16

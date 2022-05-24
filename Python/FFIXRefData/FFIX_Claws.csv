@@ -1,0 +1,11 @@
+Name,Attack,Element,Status,Abilities,Available,Cost
+Cat's Claws,23,None,None,ChakraCounter,"Initial: AmarantBuy: Alexandria, Treno (disc 3), Ipsen's Castle Mogshop",4000 gil
+Poison Knuckles,33,None,Poison,Spare ChangeCounter,"Steal: Scarlet HairBuy: Conde Petie, Madain Sari, Alexandria, Treno (disc 3), Lindblum (disc 3), Ipsen's Castle Mogshop",5000 gil
+Mythril Claws,39,None,None,CurseCounter,"Steal: TaharkaBuy: Esto Gaza (before Desert Palace), Oeilvert Mogshop, Desert Palace Mogshop",6500 gil
+Scissor Fangs,45,None,Venom,AuraCounter,Buy: Esto Gaza (after Desert Palace),8000 gil
+Dragon's Claws,53,Water,None,No MercyCounter,"Find: Chocograph 7, Forgotten Lagoon",—
+Tiger Fangs,62,None,None,ReviveCounter,Buy: Daguerreo (disc 3),13500 gil
+Avenger,70,None,Instant Death,Demi ShockCounter,"Steal: Earth GuardianBuy: Bran Bal Mogshop, Daguerreo (disc 4)",16000 gil
+Kaiser Knuckles,75,Wind,Trouble,CountdownCurseCounter,"Find: Chocograph 15, Dusk PlainsSteal: Silver DragonBuy: Daguerreo (disc 4)",18000 gil
+Duel Claws,79,None,Berserk,AuraNo MercyCounter,Steal: DeathguiseSynthesize: Black Mage Village (disc 4),"16000 gil, Dragon's Claws, Tiger Fangs"
+Rune Claws,83,None,Darkness,Spare ChangeDemi ShockRevive,Find: Memoria (Time Interval room),—

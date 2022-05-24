@@ -9,23 +9,23 @@ import pathlib
 import tkinter as tk
 
 # A reference file for each category, to be used for individualization of items.
-Support_File = os.getcwd() + "\\FFIXRefData\\FFIX_Support_Abilities.csv"
-BlkMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_Black_Magic.csv"
-WhtMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_White_Magic.csv"
-Dragon_File = os.getcwd() + "\\FFIXRefData\\FFIX_Dragon.csv"
-Skills_File = os.getcwd() + "\\FFIXRefData\\FFIX_Skills.csv"
-BlueMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_Blue_Magic.csv"
-Knives_File = os.getcwd() + "\\FFIXRefData\\FFIX_Knives.csv"
-ThiefSwords_File = os.getcwd() + "\\FFIXRefData\\FFIX_ThiefSwords.csv"
-Rods_File = os.getcwd() + "\\FFIXRefData\\FFIX_Rods.csv"
-Rackets_File = os.getcwd() + "\\FFIXRefData\\FFIX_Rackets.csv"
-Flutes_File = os.getcwd() + "\\FFIXRefData\\FFIX_Flutes.csv"
-Swords_File = os.getcwd() + "\\FFIXRefData\\FFIX_Swords.csv"
-Knight_Swords_File = os.getcwd() + "\\FFIXRefData\\FFIX_Knight_Swords.csv"
-Staves_File = os.getcwd() + "\\FFIXRefData\\FFIX_Staves.csv"
-Spears_File = os.getcwd() + "\\FFIXRefData\\FFIX_Spears.csv"
-Forks_File = os.getcwd() + "\\FFIXRefData\\FFIX_Forks.csv"
-Claws_File = os.getcwd() + "\\FFIXRefData\\FFIX_Claws.csv"
+Support_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Support_Abilities.csv"
+BlkMag_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Black_Magic.csv"
+WhtMag_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_White_Magic.csv"
+Dragon_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Dragon.csv"
+Skills_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Skills.csv"
+BlueMag_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Blue_Magic.csv"
+Knives_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Knives.csv"
+ThiefSwords_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_ThiefSwords.csv"
+Rods_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Rods.csv"
+Rackets_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Rackets.csv"
+Flutes_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Flutes.csv"
+Swords_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Swords.csv"
+Knight_Swords_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Knight_Swords.csv"
+Staves_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Staves.csv"
+Spears_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Spears.csv"
+Forks_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Forks.csv"
+Claws_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Claws.csv"
 
 Weapons_Files = [Knives_File, ThiefSwords_File, Rods_File, Rackets_File, Flutes_File,
 Swords_File, Knight_Swords_File, Staves_File, Spears_File, Forks_File, Claws_File]
@@ -40,7 +40,7 @@ def Download_files():
     html5 = requests.get("https://finalfantasy.fandom.com/wiki/Skill_(Final_Fantasy_IX)")
     html6 = requests.get("https://finalfantasy.fandom.com/wiki/Blu_Mag_(Final_Fantasy_IX)")
     html7 = requests.get("https://finalfantasy.fandom.com/wiki/Final_Fantasy_IX_weapons")
-    path = pathlib.Path(os.getcwd() + "\\FFIXRefData")
+    path = pathlib.Path(os.getcwd() + "\\FFIXRawRefData")
     path.mkdir(exist_ok=True)  # Creates the folder to save the files within.
     Support_Tables = pd.read_html(html1.text)  # this parses all the tables in webpage to a list
     Support_Data = Support_Tables[0]  # Selects the table
