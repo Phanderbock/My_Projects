@@ -1,5 +1,5 @@
 """
-Pulls abilites from wiki and writes to .csv
+Tool to browse abilities from the FFIX video game. With GUI.
 """
 import os
 import pandas as pd
@@ -8,9 +8,6 @@ import csv
 import pathlib
 import tkinter as tk
 
-# The different categories for analysis.
-Ability_Types = ["Support Abilities", "Black Magic", "White Magic", "Dragon", "Thief Skills", "Blue Magic"]
-
 # A reference file for each category, to be used for individualization of items.
 Support_File = os.getcwd() + "\\FFIXRefData\\FFIX_Support_Abilities.csv"
 BlkMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_Black_Magic.csv"
@@ -18,8 +15,20 @@ WhtMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_White_Magic.csv"
 Dragon_File = os.getcwd() + "\\FFIXRefData\\FFIX_Dragon.csv"
 Skills_File = os.getcwd() + "\\FFIXRefData\\FFIX_Skills.csv"
 BlueMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_Blue_Magic.csv"
-File_list = [Support_File, BlkMag_File, WhtMag_File, Dragon_File, Skills_File, BlueMag_File]
-Types_Dict = dict(zip(Ability_Types, File_list))
+Knives_File = os.getcwd() + "\\FFIXRefData\\FFIX_Knives.csv"
+ThiefSwords_File = os.getcwd() + "\\FFIXRefData\\FFIX_ThiefSwords.csv"
+Rods_File = os.getcwd() + "\\FFIXRefData\\FFIX_Rods.csv"
+Rackets_File = os.getcwd() + "\\FFIXRefData\\FFIX_Rackets.csv"
+Flutes_File = os.getcwd() + "\\FFIXRefData\\FFIX_Flutes.csv"
+Swords_File = os.getcwd() + "\\FFIXRefData\\FFIX_Swords.csv"
+Knight_Swords_File = os.getcwd() + "\\FFIXRefData\\FFIX_Knight_Swords.csv"
+Staves_File = os.getcwd() + "\\FFIXRefData\\FFIX_Staves.csv"
+Spears_File = os.getcwd() + "\\FFIXRefData\\FFIX_Spears.csv"
+Forks_File = os.getcwd() + "\\FFIXRefData\\FFIX_Forks.csv"
+Claws_File = os.getcwd() + "\\FFIXRefData\\FFIX_Claws.csv"
+
+Weapons_Files = [Knives_File, ThiefSwords_File, Rods_File, Rackets_File, Flutes_File,
+Swords_File, Knight_Swords_File, Staves_File, Spears_File, Forks_File, Claws_File]
 
 
 def Download_files():
@@ -30,69 +39,113 @@ def Download_files():
     html4 = requests.get("https://finalfantasy.fandom.com/wiki/Dragon_(Final_Fantasy_IX_command)")
     html5 = requests.get("https://finalfantasy.fandom.com/wiki/Skill_(Final_Fantasy_IX)")
     html6 = requests.get("https://finalfantasy.fandom.com/wiki/Blu_Mag_(Final_Fantasy_IX)")
+    html7 = requests.get("https://finalfantasy.fandom.com/wiki/Final_Fantasy_IX_weapons")
     path = pathlib.Path(os.getcwd() + "\\FFIXRefData")
     path.mkdir(exist_ok=True)  # Creates the folder to save the files within.
-    df_list = pd.read_html(html1.text)  # this parses all the tables in webpage to a list
-    df = df_list[0]  # Selects the table
-    data = (df.iloc[::2])  # Skips every other row due to formatting of site table
+    Support_Tables = pd.read_html(html1.text)  # this parses all the tables in webpage to a list
+    Support_Data = Support_Tables[0]  # Selects the table
+    data = (Support_Data.iloc[::2])  # Skips every other row due to formatting of site table
     data.to_csv(Support_File, index=False)
-    df_list2 = pd.read_html(html2.text)
-    df2 = df_list2[0]
-    data2 = (df2.iloc[::2])
+    Black_Magic_Tables = pd.read_html(html2.text)
+    Black_Magic_Data = Black_Magic_Tables[0]
+    data2 = (Black_Magic_Data.iloc[::2])
     data2.to_csv(BlkMag_File, index=False)
-    df_list3 = pd.read_html(html3.text)
-    df3 = df_list3[0]
-    data3 = (df3.iloc[::2])
+    White_Magic_Tables = pd.read_html(html3.text)
+    White_Magic_Data = White_Magic_Tables[0]
+    data3 = (White_Magic_Data.iloc[::2])
     data3.to_csv(WhtMag_File, index=False)
-    df_list4 = pd.read_html(html4.text)
-    df4 = df_list4[0]
-    data4 = (df4.iloc[::2])
+    Dragon_Abilities_Tables = pd.read_html(html4.text)
+    Dragon_Abilities_Data = Dragon_Abilities_Tables[0]
+    data4 = (Dragon_Abilities_Data[::2])
     data4.to_csv(Dragon_File, index=False)
-    df_list5 = pd.read_html(html5.text)
-    df5 = df_list5[0]
-    data5 = (df5.iloc[::2, :-1])  # Skips every other row and drops final column
+    Thief_Skills_Tables = pd.read_html(html5.text)
+    Thief_Skills_Data = Thief_Skills_Tables[0]
+    data5 = (Thief_Skills_Data.iloc[::2, :-1])  # Skips every other row and drops final column
     data5.to_csv(Skills_File, index=False)
-    df_list6 = pd.read_html(html6.text)
-    df6 = df_list6[0]
-    data6 = (df6.iloc[::2, :-1])
+    Blue_Magic_Tables = pd.read_html(html6.text)
+    Blue_Magic_Data = Blue_Magic_Tables[0]
+    data6 = (Blue_Magic_Data.iloc[::2, :-1])
     data6.to_csv(BlueMag_File, index=False)
+    Weapons_Tables = pd.read_html(html7.text)
+    Knives_Data = Weapons_Tables[0]
+    Knives_Data.drop(Knives_Data.columns[[1, 3]], axis=1, inplace=True)
+    data7 = (Knives_Data.iloc[::2])
+    data7.to_csv(Knives_File, index=False)
+    ThiefSwords_Data = Weapons_Tables[1]
+    ThiefSwords_Data.drop(ThiefSwords_Data.columns[[1, 3]], axis=1, inplace=True)  # Drops column in array 1 and 3
+    data8 = (ThiefSwords_Data.iloc[::2])
+    data8.to_csv(ThiefSwords_File, index=False)
+    Rods_Data = Weapons_Tables[2]
+    Rods_Data.drop(Rods_Data.columns[[1, 4]], axis=1, inplace=True)
+    data9 = (Rods_Data.iloc[::2])
+    data9.to_csv(Rods_File, index=False)
+    Rackets_Data = Weapons_Tables[3]
+    Rackets_Data.drop(Rackets_Data.columns[[1, 4]], axis=1, inplace=True)
+    data10 = (Rackets_Data.iloc[::2])
+    data10.to_csv(Rackets_File, index=False)
+    Flutes_Data = Weapons_Tables[4]
+    Flutes_Data.drop(Flutes_Data.columns[[1, 3, 4]], axis=1, inplace=True)
+    data11 = (Flutes_Data.iloc[::2])
+    data11.to_csv(Flutes_File, index=False)
+    Swords_Data = Weapons_Tables[5]
+    Swords_Data.drop(Swords_Data.columns[[1]], axis=1, inplace=True)
+    data12 = (Swords_Data.iloc[::2])
+    data12.to_csv(Swords_File, index=False)
+    Knight_Swords_Data = Weapons_Tables[6]
+    Knight_Swords_Data.drop(Knight_Swords_Data.columns[[1]], axis=1, inplace=True)
+    data13 = (Knight_Swords_Data.iloc[::2])
+    data13.to_csv(Knight_Swords_File, index=False)
+    Staves_Data = Weapons_Tables[7]
+    Staves_Data.drop(Staves_Data.columns[[1]], axis=1, inplace=True)
+    data14 = (Staves_Data.iloc[::2])
+    data14.to_csv(Staves_File, index=False)
+    Spears_Data = Weapons_Tables[8]
+    Spears_Data.drop(Spears_Data.columns[[1]], axis=1, inplace=True)
+    data15 = (Spears_Data.iloc[::2])
+    data15.to_csv(Spears_File, index=False)
+    Forks_Data = Weapons_Tables[9]
+    Forks_Data.drop(Forks_Data.columns[[1, 3]], axis=1, inplace=True)
+    data16 = Forks_Data.iloc[::2]
+    data16.to_csv(Forks_File, index=False)
+    Claws_Data = Weapons_Tables[10]
+    Claws_Data.drop(Claws_Data.columns[[1]], axis=1, inplace=True)
+    data17 = Claws_Data.iloc[::2]
+    data17.to_csv(Claws_File, index=False)
     print("Files downloaded")
 
 
+# Initialize the Tkinter window and first buttons.
 window = tk.Tk()
 header = tk.Label(text="FFIX Abilities List").pack()
 DownloadBtn = tk.Button(text="Download Files \n Required for first use.", command=Download_files)
 DownloadBtn.pack()
-label1 = tk.Label(text="Categories").pack()
 results = tk.Frame(window)
 results.pack(side=tk.BOTTOM)
 output = tk.Frame(window)
 output.pack()
+label1 = tk.Label(text="Categories").pack()
 
 
+# Function to print out row from .csv for specified ability.
 def read_ability(data_file, ability):
+    for widget in output.winfo_children():
+        widget.destroy()
     with open(data_file, 'r+') as f:
         reader = csv.reader(f, delimiter=',')
         for i in reader:
             if i[0] == ability:
-                try:
-                    printout = tk.Label(output, text=(i[0] + "\n" + i[1] + i[2] + "\n" + i[3] + "\n" + i[4] + i[5] + "\n"), wraplength=500)
-                    printout.pack()
-                except IndexError:
-                    try:
-                        printout = tk.Label(output, text=(i[0] + "\n" + i[1] + i[2] + "\n" + i[3] + i[4] + "\n"), wraplength=500)
-                        printout.pack()
-                    except IndexError:
-                        printout = tk.Label(output, text=(i[0] + "\n" + i[1] + i[2] + "\n" + i[3] + "\n"), wraplength=500)
-                        printout.pack()
+                result = ("\n".join(i))
+                printout = tk.Label(output, text=result, wraplength=500)
+                printout.pack()
         f.close()
 
 
+# Function to create appropriate ability options based on chosen category.
 def open_file(data_file):
     with open(data_file, 'r+') as f:
         reader = csv.reader(f, delimiter=",")
         next(reader)
-        r = 0
+        r = 5
         c = 0
         for widget in results.winfo_children():
             widget.destroy()
@@ -100,35 +153,57 @@ def open_file(data_file):
             button = tk.Button(results, text=i[0], relief=tk.RAISED, command=lambda i=i: read_ability(data_file, i[0]))
             button.grid(row=r, column=c)
             c += 1
-            if c == 10:
+            if c == 8:
                 r += 1
                 c = 0
         f.close()
 
 
-Sframe = tk.Frame(window)
-Sframe.pack(side=tk.LEFT)
-BMframe = tk.Frame(window)
-BMframe.pack(side=tk.LEFT)
-WMframe = tk.Frame(window)
-WMframe.pack(side=tk.LEFT)
-DGframe = tk.Frame(window)
-DGframe.pack(side=tk.LEFT)
-TSframe = tk.Frame(window)
-TSframe.pack(side=tk.LEFT)
-BLframe = tk.Frame(window)
-BLframe.pack(side=tk.LEFT)
-Support_Button = tk.Button(Sframe, text="Support Abilities", command=lambda: open_file(Support_File))
-Support_Button.pack()
-BlkMag_Button = tk.Button(BMframe, text="Black Mage Spells", command=lambda: open_file(BlkMag_File))
-BlkMag_Button.pack()
-WhtMag_Button = tk.Button(WMframe, text="White Mage Spells", command=lambda: open_file(WhtMag_File))
-WhtMag_Button.pack()
-Dragon_Button = tk.Button(DGframe, text="Dragon Abilities", command=lambda: open_file(Dragon_File))
-Dragon_Button.pack()
-TS_Button = tk.Button(TSframe, text="Thief Skills", command=lambda: open_file(Skills_File))
-TS_Button.pack()
-BluMag_Button = tk.Button(BLframe, text="Blue Mage Spells", command=lambda: open_file(BlueMag_File))
-BluMag_Button.pack()
+def Weapon_Classes():
+    for widget in Weapons.winfo_children():
+        widget.destroy()
+    Knives = tk.Button(Weapons, text="Knives", command=lambda: open_file(Knives_File))
+    Knives.pack(side=tk.LEFT)
+    ThiefSwords = tk.Button(Weapons, text="Thief Swords", command=lambda: open_file(ThiefSwords_File))
+    ThiefSwords.pack(side=tk.LEFT)
+    Rods = tk.Button(Weapons, text="Rods", command=lambda: open_file(Rods_File))
+    Rods.pack(side=tk.LEFT)
+    Rackets = tk.Button(Weapons, text="Rackets", command=lambda: open_file(Rackets_File))
+    Rackets.pack(side=tk.LEFT)
+    Flutes = tk.Button(Weapons, text="Flutes", command=lambda: open_file(Flutes_File))
+    Flutes.pack(side=tk.LEFT)
+    Swords = tk.Button(Weapons, text="Swords", command=lambda: open_file(Swords_File))
+    Swords.pack(side=tk.LEFT)
+    KnightSwords = tk.Button(Weapons, text="Knight Swords", command=lambda: open_file(Knight_Swords_File))
+    KnightSwords.pack(side=tk.LEFT)
+    Staves = tk.Button(Weapons, text="Staves", command=lambda: open_file(Staves_File))
+    Staves.pack(side=tk.LEFT)
+    Spears = tk.Button(Weapons, text="Staves", command=lambda: open_file(Spears_File))
+    Spears.pack(side=tk.LEFT)
+    Forks = tk.Button(Weapons, text="Forks", command=lambda: open_file(Forks_File))
+    Forks.pack(side=tk.LEFT)
+    Claws = tk.Button(Weapons, text="Claws", command=lambda: open_file(Claws_File))
+    Claws.pack(side=tk.LEFT)
+
+
+# Frame and Button for each category.
+Classes = tk.Frame(window)
+Classes.pack()
+Support_Button = tk.Button(Classes, text="Support Abilities", command=lambda: open_file(Support_File))
+Support_Button.grid(row=4, column=0)
+BlkMag_Button = tk.Button(Classes, text="Black Mage Spells", command=lambda: open_file(BlkMag_File))
+BlkMag_Button.grid(row=4, column=1)
+WhtMag_Button = tk.Button(Classes, text="White Mage Spells", command=lambda: open_file(WhtMag_File))
+WhtMag_Button.grid(row=4, column=2)
+Dragon_Button = tk.Button(Classes, text="Dragon Abilities", command=lambda: open_file(Dragon_File))
+Dragon_Button.grid(row=4, column=3)
+TS_Button = tk.Button(Classes, text="Thief Skills", command=lambda: open_file(Skills_File))
+TS_Button.grid(row=4, column=4)
+BluMag_Button = tk.Button(Classes, text="Blue Mage Spells", command=lambda: open_file(BlueMag_File))
+BluMag_Button.grid(row=4, column=5)
+Weapons_Button = tk.Button(Classes, text="Weapons", command=lambda: Weapon_Classes())
+Weapons_Button.grid(row=4, column=6)
+Weapons = tk.Frame(window)
+Weapons.pack()
 
 window.mainloop()
