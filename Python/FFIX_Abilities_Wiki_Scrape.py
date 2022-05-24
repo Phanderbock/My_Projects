@@ -162,28 +162,13 @@ def open_file(data_file):
 def Weapon_Classes():
     for widget in Weapons.winfo_children():
         widget.destroy()
-    Knives = tk.Button(Weapons, text="Knives", command=lambda: open_file(Knives_File))
-    Knives.pack(side=tk.LEFT)
-    ThiefSwords = tk.Button(Weapons, text="Thief Swords", command=lambda: open_file(ThiefSwords_File))
-    ThiefSwords.pack(side=tk.LEFT)
-    Rods = tk.Button(Weapons, text="Rods", command=lambda: open_file(Rods_File))
-    Rods.pack(side=tk.LEFT)
-    Rackets = tk.Button(Weapons, text="Rackets", command=lambda: open_file(Rackets_File))
-    Rackets.pack(side=tk.LEFT)
-    Flutes = tk.Button(Weapons, text="Flutes", command=lambda: open_file(Flutes_File))
-    Flutes.pack(side=tk.LEFT)
-    Swords = tk.Button(Weapons, text="Swords", command=lambda: open_file(Swords_File))
-    Swords.pack(side=tk.LEFT)
-    KnightSwords = tk.Button(Weapons, text="Knight Swords", command=lambda: open_file(Knight_Swords_File))
-    KnightSwords.pack(side=tk.LEFT)
-    Staves = tk.Button(Weapons, text="Staves", command=lambda: open_file(Staves_File))
-    Staves.pack(side=tk.LEFT)
-    Spears = tk.Button(Weapons, text="Staves", command=lambda: open_file(Spears_File))
-    Spears.pack(side=tk.LEFT)
-    Forks = tk.Button(Weapons, text="Forks", command=lambda: open_file(Forks_File))
-    Forks.pack(side=tk.LEFT)
-    Claws = tk.Button(Weapons, text="Claws", command=lambda: open_file(Claws_File))
-    Claws.pack(side=tk.LEFT)
+    Weapon_dict = {'Knives': Knives_File, 'ThiefSwords': ThiefSwords_File, 'Rods': Rods_File,
+        'Rackets': Rackets_File, 'Flutes': Flutes_File, 'Swords': Swords_File,
+        'KnightSwords': Knight_Swords_File, 'Staves': Staves_File, 'Spears': Spears_File,
+        'Forks': Forks_File, 'Claws': Claws_File}
+    for key, value in Weapon_dict.items():
+        Button = tk.Button(Weapons, text=key, command=lambda v=value: open_file(v))
+        Button.pack(side=tk.LEFT)
 
 
 # Frame and Button for each category.
