@@ -1,0 +1,64 @@
+Name,Effect,Source,User (AP),Magic Stones
+Auto-Reflect,Permanent Reflect status throughout battle.,Reflect Ring,Zidane (95)Vivi (70)Steiner (95)Dagger (75)Freya (95)Quina (75)Eiko (70)Amarant (85),15
+Auto-Float,Permanent Float status throughout battle.,Venetia ShieldFeather Boots,Zidane (20)Vivi (20)Steiner (20)Dagger (20)Freya (20)Quina (40)Eiko (25)Amarant (35),6
+Auto-Haste,Permanent Haste status throughout battle.,Running Shoes,Zidane (55)Vivi (55)Steiner (65)Dagger (55)Freya (75)Quina (70)Eiko (65)Amarant (70),9
+Auto-Regen,Permanent Regen status throughout battle. Regen runs even during battle animations.,Golem's FluteGolden HairpinGlutton's RobeLight RobeCarabini MailBrave SuitMaiden PrayerAngel Earrings,Zidane (25)Vivi (30)Steiner (75)Dagger (35)Freya (25)Quina (30)Eiko (35)Amarant (35),10
+Auto-Life,Start battle with Auto-Life status.,Rebirth Ring,Zidane (130)Vivi (70)Steiner (155)Dagger (105)Freya (125)Quina (165)Eiko (100)Amarant (140),12
+HP+10%,Increases max HP by 10%.,Chain MailJudo UniformAquamarineGerminas Boots,Steiner (20)Freya (30)Amarant (10),4
+HP+20%,Increases max HP by 20%.,Mantra BandGenji HelmetAdaman HatDefense GlovesMaximillianBlack BeltBattle Boots,Zidane (40)Steiner (60)Freya (75)Amarant (40),8
+MP+10%,Increases max MP by 10%.,Magician CloakMagician RobeEmeraldMagician ShoesExtension,Freya (35)Quina (50)Eiko (15),4
+MP+20%,Increases max MP by 20%.,Black RobeAngel Earrings,Vivi (30)Dagger (45)Eiko (50),8
+Accuracy+,"Physical attacks always hit, even on Vanish targets.",Diamond HelmBlack HoodPower WristGenji ArmorLapis Lazuli,Zidane (30)Steiner (40)Freya (30)Amarant (30),2
+Distract,Halves attacker's physical attack accuracy.,Judo UniformShield ArmorDiamondReflect Ring,Zidane (30)Steiner (30)Freya (25),5
+Long Reach,Attacks from back row deal same damage as front row attacks.,Thief HatProtect Ring,Zidane (170)Steiner (200)Freya (210)Amarant (210),16
+MP Attack,Each attack will use 1/8 of a character's max MP to deal 1.5 times the normal damage.,Red HatCross HelmBattle BootsPower Belt,Zidane (45)Steiner (50)Freya (20)Amarant (60),5
+Bird Killer,Physical attacks deal 1.5x damage to aerial enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,Bronze ArmorChain MailAdaman VestYellow Scarf,Zidane (20)Steiner (25)Freya (30)Amarant (10),3
+Bug Killer,Physical attacks deal 1.5x damage to insect enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,Bronze HelmMythril GlovesMythril Armlet,Zidane (35)Steiner (50)Freya (25)Amarant (10),2
+Stone Killer,Physical attacks deal 1.5x damage to stone enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,Platinum HelmAdaman VestGold ArmorPower Vest,Zidane (30)Steiner (20)Freya (20)Amarant (10),4
+Undead Killer,Physical attacks deal 1.5x damage to undead enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,HeadgearRitual HatSilver GlovesN-Kai ArmletPlate Mail,Zidane (45)Steiner (30)Freya (20)Amarant (10),2
+Dragon Killer,Physical attacks deal 1.5x damage to dragon enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,JavelinBarbut,Freya (70),3
+Devil Killer,Physical attacks deal 1.5x damage to demon enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,Cross HelmThunder GlovesChain PlateDemon's Vest,Zidane (25)Steiner (30)Freya (30)Amarant (10),2
+Beast Killer,Physical attacks deal 1.5x damage to beast enemies. Killer abilities do not stack in case an opponent belongs to more than one category.,BroadswordFlash HatLeather WristEgoist's ArmletPlatina ArmorMoonstoneBlack Belt,Zidane (30)Steiner (55)Freya (25)Amarant (10),4
+Man Eater,"Physical attacks deal 1.5x damage to human enemies (the player's own party members are ""typeless"" and Man Eater does nothing toward them). Killer abilities do not stack in case an opponent belongs to more than one category.",BandanaCoronetMythril GlovesCoral Ring,Zidane (25)Steiner (20)Freya (20)Amarant (10),2
+High Jump,Increases damage from Freya's Jump command.,Dragon Mail,Freya (75),4
+Master Thief,"Chance of obtaining rare items x32, giving 1/8 chance of stealing an item; 2x the chance of obtaining semi-rare items, also giving 1/8 chance of stealing an item.",Thief Gloves,Zidane (50),5
+Steal Gil,Gain gil alongside stolen items as per following formula: [1],Glass ArmletYellow Scarf,Zidane (40),5
+Healer,"Physical attacks heal targets. If the target is weak to the user's killer ability or weapon element, they get healed more.",Healing RodAnkletGarnet,Vivi (20)Dagger (30)Quina (60)Eiko (20)Amarant (40),2
+Add Status,"Chance of inflicting weapon's status to target. For Zidane, only works with daggers. Hit chance depends on weapon.",Bone WristChimera ArmletBracerFeather HatTwist HeadbandGlass BuckleThunder Gloves,Zidane (35)Vivi (25)Steiner (50)Freya (25)Quina (35)Amarant (20),3
+Gamble Defense,The character's Defense stat changes randomly when attacked between 0 and Defense x2.,Twist HeadbandAdaman HatPower VestBarette,Zidane (20)Freya (20)Quina (40)Amarant (35),1
+Chemist,"Doubles the effect of Potion, Hi-Potion and Ether.[note 1]",Cotton RobeGrand ArmorBaretteMadain's Ring,Dagger (15)Steiner (20)Freya (35),4
+Power Throw,Augments Amarant's Throw command.,Bracer,Amarant (125),19
+Power Up,Doubles the potency of Amarant's Chakra Flair.,Golden Skullcap,Amarant (30),3
+Reflect-Null,Spells bypass targets' Reflect status.,Robe of LordsPearl Rouge,Vivi (30)Dagger (45)Eiko (55),7
+Reflectx2,Boosts the power of spells that are reflected.,Black RobeRosetta Ring,Vivi (110),17
+Mag Elem Null,Renders all used magic spells non-elemental. Elemental Affinity still takes effect on compatible spells.,Promist RingProtect Ring,Vivi (115),13
+Concentrate,"Augments Cure, Cura, Curaga, Life and Full-Life, as well as the summon Phoenix's reviving power.",Robe of LordsRosetta Ring,Dagger (80)Eiko (90),10
+Half MP,Halves MP cost of abilities in battle.,Light RobeProtect Ring,Vivi (140)Dagger (125)Quina (90)Eiko (120),11
+High Tide,The Trance gauge fills faster.,Quina's ForksPartisanDark HatGrand HelmJade ArmletGenji GlovesGaia GearDemon's MailMinerva's PlateSapphire,Zidane (35)Vivi (25)Steiner (35)Dagger (30)Freya (20)Quina (250)Eiko (30)Amarant (60),8
+Counter,"When hit by a physical attack, the user attacks back with their own physical attack. Counter can be initiated even by missed hits.",All of Amarant's claws (apart from Rune Claws)Ritual HatPower VestPower BeltVenetia ShieldAnklet,Zidane (70)Steiner (100)Freya (85)Quina (55)Amarant (240),8
+Cover,User intercepts enemy's physical attack on a party member to take damage instead of them. Cover activates when a party member is in Near Death status.,Red HatGauntletsLinen CuirassMythril Armor,Steiner (20)Freya (30)Amarant (90),6
+Protect Girls,"Zidane intercepts enemy's physical attack on Dagger, Eiko, and Freya (and Beatrix if it was possible to have Zidane and Beatrix in a party). Activates when a female party member is at 50% HP or below.",Butterfly SwordLeather Shirt,Zidane (35),4
+Eye 3 Eye,Raises Counter rate.,Kaiser HelmFlash HatNinja GearRubber Suit,Zidane (60)Steiner (35)Freya (35)Amarant (50),5
+Body Temp,Immunizes against Freeze and Heat.,Holy MiterJade ArmletGlutton's RobeGenji ArmorDiamondFairy EarringsMadain's Ring,Zidane (25)Vivi (15)Steiner (35)Dagger (25)Freya (20)Quina (20)Eiko (20)Amarant (30),4
+Alert,Reduces chance of Back Attacks from 24/256 to 0%.,BarbutNinja GearGerminas Boots,Zidane (40)Steiner (60)Amarant (30),4
+Initiative,Boosts party's chance to get a preemptive strike from from 16/256 to 85/256.[1],ObeliskBattle Boots,Freya (95),5
+Level Up,User earns x1.5 EXP from battles.,Iron HelmEgoist's ArmletPearl RougeFairy EarringsExtensionRosetta Ring,Zidane (75)Vivi (30)Steiner (50)Dagger (50)Freya (40)Quina (60)Eiko (65)Amarant (50),7
+Ability Up,Doubles the amount of Ability Points earned from battles.,Stardust RodGreen BeretDiamond GlovesSilk RobeBrigandineDiamond ArmorCachushaRibbonLapis Lazuli,Zidane (95)Vivi (55)Steiner (70)Dagger (60)Freya (65)Quina (40)Eiko (55)Amarant (90),3
+Millionaire,Receive x1.5 gil after battle.,Yellow Scarf,Quina (100),5
+Flee-Gil,"Party earns gil from battle even when they escape by holding down and . Has no effect on Flee. If Quina is in the party, with the Millionaire ability the party will gain extra gil from fleeing in this manner.",WristDesert BootsGold Choker,Zidane (45)Amarant (30),3
+Guardian Mog,Removes Eiko's status ailments before EXP and AP are given at the end of battle. Even though Eiko can learn the ability early it does not function until the party receives the first Ribbon item.,RibbonMadain's Ring,Eiko (30),3
+Insomniac,Immunizes against Sleep.,Mythril HelmBandanaDiamond HelmHoly MiterMagician CloakGaia GearCoral Ring,Zidane (30)Vivi (25)Steiner (25)Dagger (25)Freya (30)Quina (40)Eiko (25)Amarant (20),5
+Antibody,Immunizes against Poison and Venom. Equipping it after the status effect has been afflicted does not remove said status effects.,Mythril HelmMantra BandBronze GlovesGlass ArmletSurvival VestGlutton's RobeGlass Buckle,Zidane (20)Vivi (30)Steiner (35)Dagger (15)Freya (15)Quina (20)Eiko (20)Amarant (25),4
+Bright Eyes,Immunizes against Darkness. Equipping it after the status effect has been afflicted does not remove said status effect.,Feather HatIron HelmRitual HatCachusha,Zidane (35)Steiner (25)Freya (20)Amarant (25),4
+Loudmouth,Immunizes against Silence. Equipping it after the status effect has been afflicted does not remove said status effect.,Mage's HatGolden HairpinSilk RobeWhite RobePearl Rouge,Vivi (40)Dagger (20)Quina (30)Eiko (15),4
+Restore HP,"If the user has 1/6 of their max HP or less remaining and they take damage from an enemy attack and survive, they recover 50% of their max HP.",Platinum HelmMinerva's PlateBrave SuitGrand ArmorPromist Ring,Zidane (85)Steiner (100)Freya (85)Amarant (75),8
+Jelly,Immunizes against Petrify and Gradual Petrify. Equipping it after the status effect has been afflicted does not remove said status effect.,Dark HatCircletDiamond GlovesDragon WristBronze VestMythril ArmorDark Gear,Zidane (35)Vivi (25)Steiner (30)Dagger (40)Freya (30)Quina (35)Eiko (35)Amarant (15),4
+Return Magic,"If hit by an enemy spell, the user counterattacks with the same spell. Uses no MP and the caster does not need to know the spell.",CoronetBrigandine,Vivi (90)Amarant (170),9
+Absorb MP,"When struck by an enemy's spell, Quina gain some MP. The amount of MP restored is equal to the MP needed to cast that spell.",Promist Ring,Quina (80),6
+Auto-Potion,"Uses a Potion when hit. If there are no Potions, uses Hi-Potion instead.",Mythril VestMagician RobeDemon's VestWhite RobeRunning ShoesGold ChokerExtension,Zidane (30)Vivi (10)Steiner (20)Dagger (20)Freya (30)Quina (20)Eiko (30)Amarant (30),3
+Locomotion,Immunizes against Stop.,Black HoodGolden SkullcapSurvival VestPlate MailDemon's VestNinja GearAnklet,Zidane (30)Vivi (35)Steiner (35)Dagger (30)Freya (25)Quina (20)Eiko (15)Amarant (20),4
+Clear Headed,Immunizes against Confusion.,Gold HelmLamia's TiaraGreen BeretCircletMagic ArmletDark GearMagician Shoes,Zidane (25)Vivi (15)Steiner (30)Dagger (25)Freya (35)Quina (25)Eiko (15)Amarant (30),5
+Boost,Shows eidolons' full length summon animation every time (unless used as a counter attack from Dagger's Trance).,Pumice Piece,Dagger (190)Eiko (150),12
+Odin's Sword,"If Odin's Zantetsuken fails to kill the target, it receives non-elemental damage.",Ancient Aroma,Dagger (50),5
+Mug,Makes steals deal minor damage.,Chimera ArmletThief HatSurvival Vest,Zidane (65),3
+Bandit,Steal never misses. Does not improve the chance of actually getting an item.,Mythril DaggerN-Kai Armlet,Zidane (40),5

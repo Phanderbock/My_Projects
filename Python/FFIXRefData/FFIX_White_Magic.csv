@@ -1,0 +1,25 @@
+Name,Equipment,MP,AP,User,Effect
+Cure,"Magic Racket, Rod, Silk Shirt",6,30,"Dagger, Eiko",Restores minor HP. Spell Power is 16.
+Cura,"Healing Rod, Golem's Flute, Barette",10,50,"Dagger, Eiko, Beatrix",Restores moderate HP. Spell Power is 38.
+Curaga,"Wizard Rod, Whale Whisker, Hamelin, Angel Flute",22,155,"Dagger, Eiko",Restores major HP. Spell Power is 107.
+Regen,"Fairy Flute, Fairy Earrings",14,25,Eiko,Restores HP constantly over a set time.
+Life,"Mythril Rod, Healing Rod, Whale Whisker, Golem’s Flute, Rebirth Ring, Cachusha",8,30,"Dagger, Eiko, Beatrix","Revives a KO'd ally with minimal health, or instantly defeats an undead target."
+Full-Life,"Siren's Flute, Light Robe",24,90,"Eiko, Beatrix","Fully revives and restores all HP to a KO'd ally, or instantly defeats an undead target."
+Scan,"Air Racket, Desert Boots",4,25,Dagger,See target's vital statistics. Does not work on bosses.
+Panacea,"Air Racket, Rod",4,15,"Dagger, Eiko",Cures Poison and Venom.
+Stona,"Multina Racket, Lamia's Flute",8,25,"Dagger, Eiko",Cures Petrify and Gradual Petrify.
+Esuna,"Fairy Flute, Siren's Flute, Angel Flute, Rubber Suit",20,80,"Eiko, Beatrix","Removes Sleep, Silence, Mini, Poison, Heat, Gradual Petrify, Freeze, Darkness, and Confuse."
+Shell,"Multina Racket, Mythril Racket, Mythril Rod, Wizard Rod, Cotton Robe, Gold Choker, Moonstone",6,35,"Dagger, Eiko","Applies Shell status to one target, halving damage from magical attacks."
+Protect,"Mythril Racket, Rod, Wizard Rod, Steepled Hat, Desert Boots",6,30,"Dagger, Eiko","Applies Protect to one target, halving damage from physical attacks."
+Haste,"Fairy Flute, Running Shoes, Emerald",8,30,Eiko,"Applies Haste status to one target, doubling target's speed."
+Silence,"Priest's Racket, Mythril Rod, Asura's Rod, Lamia's Flute, Magic Armlet",8,30,"Dagger, Eiko, Beatrix",Inflicts Silence status preventing target from using magic attacks. Has a 50% base accuracy.
+Mini,"Magic Racket, Asura's Rod, Feather Boots",8,40,"Dagger, Eiko","Inflicts Mini to a target, decreasing its attack and defense drastically. Has a 50% base accuracy. Also heals Minied targets from the status with perfect accuracy."
+Reflect,"Mythril Racket, Stardust Rod, Reflect Ring, Ruby",6,20,"Dagger, Eiko, Beatrix","Applies Reflect to a target, bouncing spells onto the opposing party. Group-cast spells onto multiple targets with Reflect can bounce multiple times, though the spell animation does not repeat."
+Confuse,"Asura's Rod, Lamia's Tiara",8,35,Dagger,"Inflicts target with Confusion, making them target friends and foes alike. Has a 50% base accuracy."
+Berserk,Magic Racket,6,30,Dagger,"Inflicts target with Berserk, making them constantly attack with boosted Attack and Speed. Has a 75% base accuracy rate."
+Blind,"Multina Racket, Magician Shoes",6,40,"Dagger, Beatrix",Inflicts single/multiple targets with Darkness halving their Accuracy. Has a 75% base accuracy.
+Float,"Stardust Rod, Lamia's Flute, Feather Boots",6,20,"Dagger, Eiko","Applies Float status to a target, allowing them avoid Earth damage, but take extra damage from Wind attacks."
+Dispel,"Tiger Racket, Siren's Flute",16,35,Eiko,"Removes Shell, Protect, Reflect, Haste, Regen, Float, Auto-Life, Vanish, Slow and Stop from target."
+Might,"Priest's Racket, Hamelin",14,25,Eiko,"Increases target's Strength for the duration of the battle, even if the target is KO'd."
+Jewel,Hamelin,4,50,Eiko,Extract an Ore from an enemy. Has a 50% base accuracy and can be used repeatedly.
+Holy,"Angel Flute, White Robe",36,110,"Eiko, Beatrix",Major Holy-elemental damage to one enemy. Spell Power is 113.
