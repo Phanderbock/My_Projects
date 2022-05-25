@@ -28,7 +28,7 @@ Claws_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Claws.csv"
 # Initialize the Tkinter window and first buttons.
 window = tk.Tk()
 header = tk.Label(text="FFIX Abilities List").pack()
-DownloadBtn = tk.Button(text="Download Files \n Required for first use.", command=Download_files())
+DownloadBtn = tk.Button(text="Download Files \n Required for first use.", command=lambda: Download_files())
 DownloadBtn.pack()
 results = tk.Frame(window)
 results.pack(side=tk.BOTTOM)
@@ -43,6 +43,9 @@ def read_ability(data_file, ability):
         widget.destroy()
     with open(data_file, 'r+') as f:
         reader = csv.reader(f, delimiter=',')
+        titles = next(reader)
+        categories = tk.Label(output, text=("\n".join(titles)))
+        categories.pack(side=tk.LEFT)
         for i in reader:
             if i[0] == ability:
                 result = ("\n".join(i))

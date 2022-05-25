@@ -4,9 +4,7 @@ Scrapes FFIX Fandom Wiki for ability and weapons tables.
 import os
 import pandas as pd
 import requests
-import csv
 import pathlib
-import tkinter as tk
 
 # A reference file for each category, to be used for individualization of items.
 Support_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Support_Abilities.csv"

@@ -1,25 +1,25 @@
-Name,Equipment,Spell Power,MP,AP,Description
-Fire,"Mage Staff, Leather Hat",14,6,20,Minor Fire-elemental damage to single/multiple targets.
-Fira,"Flame Staff, Mage's Hat, Topaz, Power Belt",29,12,50,Moderate Fire-elemental damage to single/multiple targets.
-Firaga,Octagon Rod,72,24,75,Major Fire-elemental damage to single/multiple targets.
-Sleep,Flame Staff,—,10,20,Inflicts Sleep to single/multiple targets. Has a 50% base accuracy.
-Blizzard,Leather Wrist,14,6,25,Minor Ice-elemental damage to single/multiple targets.
-Blizzara,"Ice Staff, Opal",29,12,50,Moderate Ice-elemental damage to single/multiple targets.
-Blizzaga,Octagon Rod,72,24,85,Major Ice-elemental damage to single/multiple targets.
-Slow,"Ice Staff, Magus Hat",-,6,20,Reduces target's speed by half on one target. Has a 60% base accuracy.
-Thunder,"Glass Buckle, Silk Shirt",14,6,25,Minor Lightning-elemental damage to single/multiple targets.
-Thundara,"Lightning Staff, Peridot",29,12,50,Moderate Lightning-elemental damage to single/multiple targets.
-Thundaga,Octagon Rod,72,24,80,Major Lightning-elemental damage to single/multiple targets.
-Stop,Oak Staff,—,8,25,"Target is frozen in time and is considered KO'd. EXP, Gil, and Items are not won. Has a 40% base accuracy."
-Poison,Lightning Staff,—,8,35,Inflict Poison to single/multiple targets. Has a 60% base accuracy.
-Bio,Oak Staff,42,18,40,Moderate non-elemental damage to single/multiple targets and may Poison targets. Has a 20% accuracy inflicting Poison.
-Osmose,"High Mage Staff, Gaia Gear",15,2,70,"Steal MP from target to restore own MP, may damage his MP if the target is Undead."
-Drain,Oak Staff,32,14,60,"Steals HP from target to restore own HP, may damage him if the target is Undead."
-Demi,"Cypress Pile, Amethyst, Black Belt",30,18,30,30% of Max HP dealt as damage to single/multiple targets. Has a 40% accuracy.
-Comet,Cypress Pile,56,16,55,Inflicts random non-elemental damage to one target based on the following formula: 56 * A random number between 1 and (Vivi's Level + Vivi's Magic stat)
-Death,Black Hood,-,20,45,Inflicts Instant Death on one target. Has a 35% base accuracy.
-Break,Cypress Pile,-,18,30,Inflicts Petrify on one target. Has a 40% base accuracy.
-Water,N-Kai Armlet,64,22,55,Moderate Water elemental damage to single/multiple targets.
-Meteor,High Mage Staff,88,42,95,"Random non-elemental damage to all enemies, ranging from minimal to extreme. May 'fizzle' out, resulting in a miss. Inflicts damage based on the following formula: 88 * A random number between 1 and (Vivi's Level + Vivi's Magic stat)[1]"
-Flare,Black Robe,119,40,95,Major non-elemental damage to one target.
-Doomsday,Mace of Zeus,112,72,150,Massive Shadow elemental damage to all enemies and allies.
+"Name","Equipment","Spell Power","MP","AP","Description"
+"Fire","Mage Staff, Leather Hat",14,6,20,"Minor Fire-elemental damage to single/multiple targets."
+"Fira","Flame Staff, Mage's Hat, Topaz, Power Belt",29,12,50,"Moderate Fire-elemental damage to single/multiple targets."
+"Firaga","Octagon Rod",72,24,75,"Major Fire-elemental damage to single/multiple targets."
+"Sleep","Flame Staff",,10,20,"Inflicts Sleep to single/multiple targets. Has a 50% base accuracy."
+"Blizzard","Leather Wrist",14,6,25,"Minor Ice-elemental damage to single/multiple targets."
+"Blizzara","Ice Staff, Opal",29,12,50,"Moderate Ice-elemental damage to single/multiple targets."
+"Blizzaga","Octagon Rod",72,24,85,"Major Ice-elemental damage to single/multiple targets."
+"Slow","Ice Staff, Magus Hat",,6,20,"Reduces target's speed by half on one target. Has a 60% base accuracy."
+"Thunder","Glass Buckle, Silk Shirt",14,6,25,"Minor Lightning-elemental damage to single/multiple targets."
+"Thundara","Lightning Staff, Peridot",29,12,50,"Moderate Lightning-elemental damage to single/multiple targets."
+"Thundaga","Octagon Rod",72,24,80,"Major Lightning-elemental damage to single/multiple targets."
+"Stop","Oak Staff",,8,25,"Target is frozen in time and is considered KO'd. EXP, Gil, and Items are not won. Has a 40% base accuracy."
+"Poison","Lightning Staff",,8,35,"Inflict Poison to single/multiple targets. Has a 60% base accuracy."
+"Bio","Oak Staff",42,18,40,"Moderate non-elemental damage to single/multiple targets and may Poison targets. Has a 20% accuracy inflicting Poison."
+"Osmose","High Mage Staff, Gaia Gear",15,2,70,"Steal MP from target to restore own MP, may damage his MP if the target is Undead."
+"Drain","Oak Staff",32,14,60,"Steals HP from target to restore own HP, may damage him if the target is Undead."
+"Demi","Cypress Pile, Amethyst, Black Belt",30,18,30,"30% of Max HP dealt as damage to single/multiple targets. Has a 40% accuracy."
+"Comet","Cypress Pile",56,16,55,"Inflicts random non-elemental damage to one target based on the following formula: 56 * A random number between 1 and (Vivi's Level + Vivi's Magic stat)"
+"Death","Black Hood",,20,45,"Inflicts Instant Death on one target. Has a 35% base accuracy."
+"Break","Cypress Pile",,18,30,"Inflicts Petrify on one target. Has a 40% base accuracy."
+"Water","N-Kai Armlet",64,22,55,"Moderate Water elemental damage to single/multiple targets."
+"Meteor","High Mage Staff",88,42,95,"Random non-elemental damage to all enemies, ranging from minimal to extreme. May 'fizzle' out, resulting in a miss. Inflicts damage based on the following formula: 88 * A random number between 1 and (Vivi's Level + Vivi's Magic stat)[1]"
+"Flare","Black Robe",119,40,95,"Major non-elemental damage to one target."
+"Doomsday","Mace of Zeus",112,72,150,"Massive Shadow elemental damage to all enemies and allies."
