@@ -1,11 +1,11 @@
-Name,Attack,Element,Status,Abilities,Available,Cost
-Broadsword,12,None,None,Beast Killer,Initial: SteinerSteal: Prison CageBuy: DaliFind: Ipsen's Castle,330 gil
-Iron Sword,16,None,None,Minus Strike,"Steal: BakuInitial: Blank, MarcusBuy: Dali, Lindblum (disc 1), Ipsen's Castle Mogshop",660 gil
-Mythril Sword,20,None,None,Armor Break,"Steal: BeatrixBuy: Treno (disc 2), Esto Gaza (before Desert Palace)",1300 gil
-Blood Sword,24,None,Absorbs HP,Darkside,Find: Give Queen Stella four StellazzioSteal: Tiamat,—
-Ice Brand,35,Ice,Freeze,Mental Break,"Steal: BeatrixFind: Alexandria CastleBuy: Lindblum (disc 2), Dragon's Gate, Fossil Roo, Alexandria, Treno (disc 3)",3780 gil
-Coral Sword,38,Lightning,None,Charge!,"Steal: LaniBuy: Treno (disc 3), Lindblum (disc 3)",4000 gil
-Diamond Sword,42,None,None,Power Break,"Find: OeilvertBuy: Oeilvert Mogshop, Desert Palace Mogshop, Esto Gaza (after Desert Palace)",4700 gil
-Flame Saber,46,Fire,Heat,Magic Break,Buy: Esto Gaza (after Desert Palace),5190 gil
-Rune Blade,57,None,Darkness,Iai Strike,Buy: Daguerreo (disc 3),8900 gil
-Defender,65,Halves Ice/Thunder damage,None,Thunder Slash,"Buy: Bran Bal Mogshop, Daguerreo (disc 4)",9340 gil
+"Name","Attack","Element","Status","Abilities","Available","Cost"
+"Broadsword",12,"None","None","Beast Killer","Initial: Steiner/ Steal: Prison Cage/ Buy: Dali/ Find: Ipsen's Castle","330 gil"
+"Iron Sword",16,"None","None","Minus Strike","Steal: Baku/ Initial: Blank, Marcus/ Buy: Dali, Lindblum (disc 1), Ipsen's Castle Mogshop","660 gil"
+"Mythril Sword",20,"None","None","Armor Break","Steal: Beatrix/ Buy: Treno (disc 2), Esto Gaza (before Desert Palace)","1300 gil"
+"Blood Sword",24,"None","Absorbs HP","Darkside","Find: Give Queen Stella four Stellazzio/ Steal: Tiamat","None"
+"Ice Brand",35,"Ice","Freeze","Mental Break","Steal: Beatrix/ Find: Alexandria Castle/ Buy: Lindblum (disc 2), Dragon's Gate, Fossil Roo, Alexandria, Treno (disc 3)","3780 gil"
+"Coral Sword",38,"Lightning","None","Charge!","Steal: Lani/ Buy: Treno (disc 3), Lindblum (disc 3)","4000 gil"
+"Diamond Sword",42,"None","None","Power Break","Find: Oeilvert/ Buy: Oeilvert Mogshop, Desert Palace Mogshop, Esto Gaza (after Desert Palace)","4700 gil"
+"Flame Saber",46,"Fire","Heat","Magic Break","Buy: Esto Gaza (after Desert Palace)","5190 gil"
+"Rune Blade",57,"None","Darkness","Iai Strike","Buy: Daguerreo (disc 3)","8900 gil"
+"Defender",65,"Halves Ice/Thunder damage","None","Thunder Slash","Buy: Bran Bal Mogshop, Daguerreo (disc 4)","9340 gil"

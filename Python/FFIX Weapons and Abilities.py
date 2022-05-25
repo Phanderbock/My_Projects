@@ -4,32 +4,29 @@ Tool to browse abilities from the FFIX video game. With GUI.
 import os
 import csv
 import tkinter as tk
-from FFIX_Abilities_Wiki_Scrape import Download_files
 
 # A reference file for each category, to be used for individualization of items.
-Support_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Support_Abilities.csv"
-BlkMag_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Black_Magic.csv"
-WhtMag_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_White_Magic.csv"
-Dragon_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Dragon.csv"
-Skills_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Skills.csv"
-BlueMag_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Blue_Magic.csv"
-Knives_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Knives.csv"
-ThiefSwords_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_ThiefSwords.csv"
-Rods_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Rods.csv"
-Rackets_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Rackets.csv"
-Flutes_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Flutes.csv"
-Swords_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Swords.csv"
-Knight_Swords_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Knight_Swords.csv"
-Staves_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Staves.csv"
-Spears_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Spears.csv"
-Forks_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Forks.csv"
-Claws_File = os.getcwd() + "\\FFIXRawRefData\\FFIX_Claws.csv"
+Support_File = os.getcwd() + "\\FFIXRefData\\FFIX_Support_Abilities.csv"
+BlkMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_Black_Magic.csv"
+WhtMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_White_Magic.csv"
+Dragon_File = os.getcwd() + "\\FFIXRefData\\FFIX_Dragon.csv"
+Skills_File = os.getcwd() + "\\FFIXRefData\\FFIX_Skills.csv"
+BlueMag_File = os.getcwd() + "\\FFIXRefData\\FFIX_Blue_Magic.csv"
+Knives_File = os.getcwd() + "\\FFIXRefData\\FFIX_Knives.csv"
+ThiefSwords_File = os.getcwd() + "\\FFIXRefData\\FFIX_ThiefSwords.csv"
+Rods_File = os.getcwd() + "\\FFIXRefData\\FFIX_Rods.csv"
+Rackets_File = os.getcwd() + "\\FFIXRefData\\FFIX_Rackets.csv"
+Flutes_File = os.getcwd() + "\\FFIXRefData\\FFIX_Flutes.csv"
+Swords_File = os.getcwd() + "\\FFIXRefData\\FFIX_Swords.csv"
+Knight_Swords_File = os.getcwd() + "\\FFIXRefData\\FFIX_Knight_Swords.csv"
+Staves_File = os.getcwd() + "\\FFIXRefData\\FFIX_Staves.csv"
+Spears_File = os.getcwd() + "\\FFIXRefData\\FFIX_Spears.csv"
+Forks_File = os.getcwd() + "\\FFIXRefData\\FFIX_Forks.csv"
+Claws_File = os.getcwd() + "\\FFIXRefData\\FFIX_Claws.csv"
 
 # Initialize the Tkinter window and first buttons.
 window = tk.Tk()
 header = tk.Label(text="FFIX Abilities List").pack()
-DownloadBtn = tk.Button(text="Download Files \n Required for first use.", command=lambda: Download_files())
-DownloadBtn.pack()
 results = tk.Frame(window)
 results.pack(side=tk.BOTTOM)
 output = tk.Frame(window)

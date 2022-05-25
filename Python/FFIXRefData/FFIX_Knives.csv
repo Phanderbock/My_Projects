@@ -1,7 +1,7 @@
-Name,Attack,Status,Abilities,Available,Cost
-Dagger,12,None,Flee,"Initial: ZidaneFind: Ipsen's Castle.Buy: Dali, Lindblum (discs 1 & 2), Treno, Madain Sari, Bran Bal Mogshop",320 gil
-Mage Masher,14,Silence,FleeDetect,"Steal: Masked ManFind: Ice CavernBuy: Dali, Lindblum (discs 1 & 2), Treno, Black Mage Village (discs 2 & 3), Madain Sari, Daguerreo (disc 3), Ipsen's Castle Mogshop, Bran Bal Mogshop",500 gil
-Mythril Dagger,18,None,Bandit,"Steal: SealionFind: Treno Doctor Tot's towerBuy: Lindblum (discs 1 & 2), Treno, Black Mage Village (discs 2 & 3), Madain Sari, Alexandria, Esto Gaza (before Desert Palace), Daguerreo (disc 3), Bran Bal Mogshop",950 gil
-Gladius,30,Slow,AnnoyLucky Seven,"Steal: LaniBuy: Black Mage Village (discs 2 & 3), Madain Sari, Alexandria, Treno (disc 3), Esto Gaza (after Desert Palace), Daguerreo (disc 3), Bran Bal Mogshop",2300 gil
-Zorlin Shape,42,None,Flee,"Buy: Esto Gaza (after Desert Palace), Daguerreo (disc 3), Bran Bal Mogshop",6000 gil
-Orichalcon,71,None,Detect,"Steal: TaharkaBuy: Bran Bal Mogshop, Daguerreo (disc 4)",17000 gil
+"Name","Attack","Status","Abilities","Available","Cost"
+"Dagger",12,"None","Flee","Initial: Zidane/ Find: Ipsen's Castle./ Buy: Dali, Lindblum (discs 1 & 2), Treno, Madain Sari, Bran Bal Mogshop","320 gil"
+"Mage Masher",14,"Silence","Flee, Detect","Steal: Masked Man/ Find: Ice Cavern/ Buy: Dali, Lindblum (discs 1 & 2), Treno, Black Mage Village (discs 2 & 3), Madain Sari, Daguerreo (disc 3), Ipsen's Castle Mogshop, Bran Bal Mogshop","500 gil"
+"Mythril Dagger",18,"None","Bandit","Steal: Sealion/ Find: Treno Doctor Tot's tower/ Buy: Lindblum (discs 1 & 2), Treno, Black Mage Village (discs 2 & 3), Madain Sari, Alexandria, Esto Gaza (before Desert Palace), Daguerreo (disc 3), Bran Bal Mogshop","950 gil"
+"Gladius",30,"Slow","Annoy, Lucky Seven","Steal: Lani/ Buy: Black Mage Village (discs 2 & 3), Madain Sari, Alexandria, Treno (disc 3), Esto Gaza (after Desert Palace), Daguerreo (disc 3), Bran Bal Mogshop","2300 gil"
+"Zorlin Shape",42,"None","Flee","Buy: Esto Gaza (after Desert Palace), Daguerreo (disc 3), Bran Bal Mogshop","6000 gil"
+"Orichalcon",71,"None","Detect","Steal: Taharka/ Buy: Bran Bal Mogshop, Daguerreo (disc 4)","17000 gil"

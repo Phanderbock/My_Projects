@@ -1,6 +1,6 @@
-Name,Attack,Element,Status,Abilities,Available,Cost
-Save the Queen,23,Halves Fire damage,None,None,Initial: BeatrixSynthesize: Hades in Memoria,"50,000 gil, Javelin, Silver Gloves"
-Ultima Sword,74,None,Sleep,Stock Break,Buy: Daguerreo (disc 4)Steal: Maliris,14000 gil
-Excalibur,77,Holy,None,Climhazzard,Find: Through sidequest in Treno and Daguerreo,—
-Ragnarok,87,None,Slow,ShockThunder Slash,"Find: Chocograph 21, Outer Island",—
-Excalibur II,108,Holy,None,Minus StrikeClimhazzardStock Break,"Find: Memoria (Gate to Space room, search right pillar; under twelve hours of play time)",—
+"Name","Attack","Element","Status","Abilities","Available","Cost"
+"Save the Queen",23,"Halves Fire damage","None","None","Initial: Beatrix/ Synthesize: Hades in Memoria","50,000 gil, Javelin, Silver Gloves"
+"Ultima Sword",74,"None","Sleep","Stock Break","Buy: Daguerreo (disc 4)/ Steal: Maliris","14000 gil"
+"Excalibur",77,"Holy","None","Climhazzard","Find: Through sidequest in Treno and Daguerreo","None"
+"Ragnarok",87,"None","Slow","Shock, Thunder Slash","Find: Chocograph 21, Outer Island","None"
+"Excalibur II",108,"Holy","None","Minus Strike, Climhazzard, Stock Break","Find: Memoria (Gate to Space room, search right pillar; under twelve hours of play time)","None"

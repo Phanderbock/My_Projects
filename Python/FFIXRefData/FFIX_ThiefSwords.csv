@@ -1,10 +1,10 @@
-Name,Attack,Status,Abilities,Available,Cost
-Butterfly Sword,21,Silence,What's That!?Protect Girls,"Synthesize: Lindblum (disc 1 & 2), Treno (disc 1 & 2), Black Mage Village","300 gil, Dagger, Mage Masher"
-The Ogre,24,Darkness,Soul Blade,"Synthesize: Lindblum, Treno, Black Mage Village, AlexandriaFind: Pinnacle Rocks","700 gil, 2x Mage Masher"
-Exploda,31,Trouble,SacrificeLucky Seven,"Synthesize: Lindblum, Black Mage Village, Alexandria, Treno (discs 3 & 4)Find: Madain Sari","1000 gil, Mythril Dagger, Mage Masher"
-Rune Tooth,37,Poison,Lucky Seven,"Synthesize: Black Mage Village, Alexandria, Treno (disc 3 & 4), Lindblum (disc 3 & 4)","2000 gil, 2x Mythril Dagger"
-Angel Bless,44,Confuse,Thievery,"Synthesize: Alexandria, Treno (disc 3 & 4), Lindblum (disc 3 & 4), Daguerreo, Black Mage Village (disc 4)","9000 gil, Mythril Dagger, Gladius"
-Sargatanas,53,Petrify,Annoy,"Synthesize: Daguerreo, Black Mage Village (disc 4)","12000 gil, Gladius, Zorlin Shape"
-Masamune,62,Doom,Sacrifice,Synthesize: Black Mage Village (disc 4)Steal: Maliris,"16000 gil, Zorlin Shape, Orichalcon"
-The Tower,86,Mini,Lucky SevenThievery,Find: Memoria (Recollection Room),—
-Ultima Weapon,100,Sleep,Flee,Find: Use a Dead Pepper at Dive Spot where Shimmering Island was (disc 4) while riding Choco,—
+"Name","Attack","Status","Abilities","Available","Cost"
+"Butterfly Sword",21,"Silence","What's That!?, Protect Girls","Synthesize: Lindblum (disc 1 & 2), Treno (disc 1 & 2), Black Mage Village","300 gil, Dagger, Mage Masher"
+"The Ogre",24,"Darkness","Soul Blade","Synthesize: Lindblum, Treno, Black Mage Village, Alexandria/ Find: Pinnacle Rocks","700 gil, 2x Mage Masher"
+"Exploda",31,"Trouble","Sacrifice, Lucky Seven","Synthesize: Lindblum, Black Mage Village, Alexandria, Treno (discs 3 & 4)/ Find: Madain Sari","1000 gil, Mythril Dagger, Mage Masher"
+"Rune Tooth",37,"Poison","Lucky Seven","Synthesize: Black Mage Village, Alexandria, Treno (disc 3 & 4), Lindblum (disc 3 & 4)","2000 gil, 2x Mythril Dagger"
+"Angel Bless",44,"Confuse","Thievery","Synthesize: Alexandria, Treno (disc 3 & 4), Lindblum (disc 3 & 4), Daguerreo, Black Mage Village (disc 4)","9000 gil, Mythril Dagger, Gladius"
+"Sargatanas",53,"Petrify","Annoy","Synthesize: Daguerreo, Black Mage Village (disc 4)","12000 gil, Gladius, Zorlin Shape"
+"Masamune",62,"Doom","Sacrifice","Synthesize: Black Mage Village (disc 4)/ Steal: Maliris","16000 gil, Zorlin Shape, Orichalcon"
+"The Tower",86,"Mini","Lucky Seven, Thievery","Find: Memoria (Recollection Room)","None"
+"Ultima Weapon",100,"Sleep","Flee","Find: Use a Dead Pepper at Dive Spot where Shimmering Island was (disc 4) while riding Choco","None"

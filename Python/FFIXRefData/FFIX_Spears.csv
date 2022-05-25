@@ -1,11 +1,11 @@
-Name,Attack,Element,Status,Abilities,Available,Cost
-Javelin,18,None,None,Dragon Killer,Initial: FreyaFind: Ipsen's CastleBuy: Lindblum (disc 1),880 gil
-Mythril Spear,20,None,None,Reis's Wind,"Find: BurmeciaBuy: Treno (disc 2), Esto Gaza (before Desert Palace), Ipsen's Castle Mogshop",1100 gil
-Partisan,25,None,None,High TideLancer,"Steal: ZornBuy: Cleyra, Lindblum (discs 2 & 3), Dragon's Gate, Fossil Roo, Alexandria, Treno (disc 3)",1600 gil
-Ice Lance,32,Ice,Freeze,White Draw,"Buy: Alexandria, Treno (disc 3), Lindblum (disc 3)",2430 gil
-Trident,37,None,Darkness,Luna,"Buy: Oeilvert Mogshop, Desert Palace Mogshop",3580 gil
-Heavy Lance,42,None,Stop,Six Dragons,Buy: Esto Gaza (after Desert Palace),4700 gil
-Obelisk,52,None,Petrify,Cherry BlossomInitiative,Buy: Daguerreo (disc 3),6000 gil
-Holy Lance,62,Holy,None,Dragon's CrestReis's Wind,"Steal: ArkBuy: Bran Bal Mogshop, Daguerreo (disc 4)",11000 gil
-Kain's Lance,71,None,Confuse,Cherry BlossomDragon's CrestWhite Draw,"Find: Memoria (Entrance room, right wall)",—
-Dragon's Hair,77,None,None,Dragon Breath,Find: Mountain crack north-west of Oeilvert.,—
+"Name","Attack","Element","Status","Abilities","Available","Cost"
+"Javelin",18,"None","None","Dragon Killer","Initial: Freya/ Find: Ipsen's Castle/ Buy: Lindblum (disc 1)","880 gil"
+"Mythril Spear",20,"None","None","Reis's Wind","Find: Burmecia/ Buy: Treno (disc 2), Esto Gaza (before Desert Palace), Ipsen's Castle Mogshop","1100 gil"
+"Partisan",25,"None","None","High Tide, Lancer","Steal: Zorn/ Buy: Cleyra, Lindblum (discs 2 & 3), Dragon's Gate, Fossil Roo, Alexandria, Treno (disc 3)","1600 gil"
+"Ice Lance",32,"Ice","Freeze","White Draw","Buy: Alexandria, Treno (disc 3), Lindblum (disc 3)","2430 gil"
+"Trident",37,"None","Darkness","Luna","Buy: Oeilvert Mogshop, Desert Palace Mogshop","3580 gil"
+"Heavy Lance",42,"None","Stop","Six Dragons","Buy: Esto Gaza (after Desert Palace)","4700 gil"
+"Obelisk",52,"None","Petrify","Cherry Blossom, Initiative","Buy: Daguerreo (disc 3)","6000 gil"
+"Holy Lance",62,"Holy","None","Dragon's Crest, Reis's Wind","Steal: Ark/ Buy: Bran Bal Mogshop, Daguerreo (disc 4)","11000 gil"
+"Kain's Lance",71,"None","Confuse","Cherry Blossom, Dragon's Crest, White Draw","Find: Memoria (Entrance room, right wall)","None"
+"Dragon's Hair",77,"None","None","Dragon Breath","Find: Mountain crack north-west of Oeilvert.","None"
