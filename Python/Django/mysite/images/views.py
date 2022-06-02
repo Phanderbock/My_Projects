@@ -4,8 +4,8 @@ from django.contrib import messages
 from .forms import ImageCreateForm
 from .models import Image
 from django.http import JsonResponse, HttpResponse
-from django.views.decorators import require_POST
-from common.decorators import ajax_required
+from django.views.decorators.http import require_POST
+from mysite.common.decorators import ajax_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
