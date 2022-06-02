@@ -40,7 +40,7 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
-    # 'django_extensions',
+    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'images.apps.ImagesConfig',
     'easy_thumbnails',
+    'actions.apps.ActionsConfig',
 ]
 
 MIDDLEWARE = [
