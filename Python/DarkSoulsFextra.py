@@ -11,10 +11,14 @@ spells and the scrolls which they are learned from.
 """ Scrolls. [1]:Use, [2]:Location"""
 
 Scrolls = {
-    "Sage's Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Great Farron Dart and Farron Hail', 'Location': 'Farron Keep, Keep Ruins bonfire. Look left after going down to swamp. It is across the swamp guarded by enemies. Mushroom corner'},
-    "Golden Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Cast Light, Repair, Hidden Body, Hidden Weapon, and Twisted Wall of Light', 'Location': 'Farron Keep, Keep ruins bonfire. Walk all the way down to the end of the fallen bridge, and follow the right wall through the poison swamp. The scroll is in a cave at the end of that wall guarded by some basilisks.'},
-    "Logan's Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Soul Spear and Homing Soulmass.', 'Location': 'Irithyll Dungeon, poison swamp in Profaned Capital.  Climb to the roof of the building and defeat the sorcerer NPC.'},
-    "Crystal Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Homing Crystal Soulmass, Crystal Soul Spear, and Crystal Magic Weapon.', 'Location': 'Lothric Castle, defeat the Crystal Sage in the Grand Archives'}
+    "Sage's Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Great Farron Dart and Farron Hail',
+        'Location': 'Farron Keep, Keep Ruins bonfire. Look left after going down to swamp. It is across the swamp guarded by enemies. Mushroom corner'},
+    "Golden Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Cast Light, Repair, Hidden Body, Hidden Weapon, and Twisted Wall of Light',
+        'Location': 'Farron Keep, Keep ruins bonfire. Walk all the way down to the end of the fallen bridge, and follow the right wall through the poison swamp. The scroll is in a cave at the end of that wall guarded by some basilisks.'},
+    "Logan's Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Soul Spear and Homing Soulmass.',
+        'Location': 'Irithyll Dungeon, poison swamp in Profaned Capital.  Climb to the roof of the building and defeat the sorcerer NPC.'},
+    "Crystal Scroll": {'Use': 'Give to Orbeck of Vinheim to unlock Homing Crystal Soulmass, Crystal Soul Spear, and Crystal Magic Weapon.',
+        'Location': 'Lothric Castle, defeat the Crystal Sage in the Grand Archives'}
     }
 
 """Sorcery. Name. Description. Source."""
