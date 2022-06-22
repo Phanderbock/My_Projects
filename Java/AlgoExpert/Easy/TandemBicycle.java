@@ -3,7 +3,7 @@ import java.util.*;
 
 public class TandemBicycle {
 	
-	public int tandemBicycle(int[] redShirtSpeeds, int[] blueShirtSpeeds, booean fastest) {
+	public int tandemBicycle(int[] redShirtSpeeds, int[] blueShirtSpeeds, boolean fastest) {
 		Arrays.sort(redShirtSpeeds);
 		Arrays.sort(blueShirtSpeeds);
 		
