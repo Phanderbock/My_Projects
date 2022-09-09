@@ -1,6 +1,7 @@
 package commander;
 
 import java.lang.reflect.Field;
+import java.util.Arrays;
 
 public class CommanderClass {
 	
@@ -20,6 +21,11 @@ public class CommanderClass {
 		
 		public void print() {
 			System.out.println(Name);
+			System.out.println("Points: " + Points);
+			System.out.println("Health: " + Health + " Courage: " + Courage);
+			System.out.println("Keywords: " + Arrays.toString(Keywords));
+			System.out.println("Weapon Profiles: " + Arrays.toString(WeaponProfiles));
+			System.out.println("Upgrades: " + Arrays.toString(UpgradeSlots));
 			
 		}
 		

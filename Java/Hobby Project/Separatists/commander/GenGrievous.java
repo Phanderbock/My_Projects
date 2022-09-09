@@ -16,7 +16,7 @@ public class GenGrievous {
 		Grievous.WeaponProfiles = new String[] {"Trophy Lightsaber", "Trophy Lightsaber"};
 		Grievous.UpgradeSlots = new String[] {"Command", "Command", "Armament", "Training"};
 					
-		System.out.println("Name: " + Grievous.Name);
+		Grievous.print();
 	}
 	}
 }
