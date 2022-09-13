@@ -5,6 +5,7 @@ import commander.CommanderClass.Commander;
 
 
 public class GenGrievous {
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 	Commander Grievous = new Commander();{
 		Grievous.Name = "General Grievous";

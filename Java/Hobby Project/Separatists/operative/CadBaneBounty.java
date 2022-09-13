@@ -1,6 +1,8 @@
 package operative;
 
 public class CadBaneBounty {
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) {
 	
 	OperativeClass.Operative CadBane = new OperativeClass.Operative();{
 		CadBane.Name = "Cad Bane";
@@ -12,6 +14,8 @@ public class CadBaneBounty {
 		CadBane.WeaponProfiles = new String[] {"Martial Arts", "Dual LL-30 Blaster Pistols"};
 		CadBane.UpgradeSlots = new String[] {"Comms", "Gear", "Armament", "Training", "Training", 
 				"Grenades"};
+		
+		CadBane.print();
 		}
 	}
-
+}
