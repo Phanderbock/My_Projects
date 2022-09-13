@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class BSTClosestValue {
 	
 	public static int findClosestValueInBst(BST tree, int target) {

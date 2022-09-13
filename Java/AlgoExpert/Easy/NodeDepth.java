@@ -1,6 +1,3 @@
-import java.util.*;
-
-
 public class NodeDepth {
 	
 	public static int nodeDepths(BinaryTree root) {

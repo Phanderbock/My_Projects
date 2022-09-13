@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class FindThreeLargestNumbers {
 	
 	public static int[] findThreeLargestnumbers(int[] array) {
