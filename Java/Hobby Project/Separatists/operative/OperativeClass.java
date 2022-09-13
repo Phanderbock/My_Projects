@@ -13,6 +13,9 @@ public class OperativeClass {
 		public String[] Keywords;
 		public String[] WeaponProfiles;
 		public String[] UpgradeSlots;
+		public String UnitCardPath;
+		public String ProfilePic;
+		
 		@Override
 		public String toString() {
 		  return getClass().getSimpleName() + "[name=" + Name + "]";
