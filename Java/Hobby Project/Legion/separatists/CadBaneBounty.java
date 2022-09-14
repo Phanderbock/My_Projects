@@ -1,10 +1,9 @@
-package operative;
+package separatists;
 
 public class CadBaneBounty {
-	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 	
-	OperativeClass.Operative CadBane = new OperativeClass.Operative();{
+	Operative.OperativeClass CadBane = new Operative.OperativeClass();{
 		CadBane.Name = "Cad Bane";
 		CadBane.Points = 105;
 		CadBane.Health = 6;

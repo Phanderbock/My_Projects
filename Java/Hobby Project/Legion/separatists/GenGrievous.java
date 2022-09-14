@@ -1,13 +1,8 @@
-package commander;
-
-import commander.CommanderClass.Commander;
-
-
+package separatists;
 
 public class GenGrievous {
-	@SuppressWarnings("static-access")
-	public static void main(String[] args) {
-	Commander Grievous = new Commander();{
+	public static void main(String args[]){
+	Commander.CommanderClass Grievous = new Commander.CommanderClass();{
 		Grievous.Name = "General Grievous";
 		Grievous.Points = 175;
 		Grievous.Health = 8;
@@ -18,6 +13,6 @@ public class GenGrievous {
 		Grievous.UpgradeSlots = new String[] {"Command", "Command", "Armament", "Training"};
 					
 		Grievous.print();
-	}
+	}	
 	}
 }
