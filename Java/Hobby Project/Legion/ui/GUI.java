@@ -16,14 +16,14 @@ public class GUI extends JFrame {
 	ImageIcon ImpPic = new ImageIcon(Logo3);
 	BufferedImage Logo4 = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/Rebels.png"));
 	ImageIcon RebsPic = new ImageIcon(Logo4);
-	JButton seps = new JButton("Separatists", sepsPic);
-	JButton Gar = new JButton("Grand Army of the Republic", GARPic);
-	JButton Imps = new JButton("Empire", ImpPic);
-	JButton Rebs = new JButton("Rebels", RebsPic);
+	JButton seps = new JButton(sepsPic);
+	JButton Gar = new JButton(GARPic);
+	JButton Imps = new JButton(ImpPic);
+	JButton Rebs = new JButton(RebsPic);
 	// Constructor to setup the GUI components and event handlers
 	public GUI() throws IOException{
 		super("Star Wars Legion by Phanderbock");
-		setSize(600, 900);
+		setSize(600, 600);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	    JPanel panel = new JPanel();
 	    panel.add(seps);
