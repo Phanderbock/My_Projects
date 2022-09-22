@@ -45,18 +45,38 @@ public void addComponentToPane(Container pane) throws IOException{
     comboBoxPane.add(cb);
 
     JPanel factionsCard = new JPanel();
-    factionsCard.add(new JButton(sepsPic));
-    factionsCard.add(new JButton(GARPic));
-    factionsCard.add(new JButton(RebsPic));
-    factionsCard.add(new JButton(ImpPic));
+    JButton sepsButton = new JButton(sepsPic);
+    sepsButton.addActionListener(new Listener());
+    factionsCard.add(sepsButton); 
+    JButton garButton = new JButton(GARPic);
+    garButton.addActionListener(new Listener());
+    factionsCard.add(garButton);
+    JButton rebsButton = new JButton(RebsPic);
+    rebsButton.addActionListener(new Listener());
+    factionsCard.add(rebsButton);
+    JButton impButton = new JButton(ImpPic);
+    impButton.addActionListener(new Listener());
+    factionsCard.add(impButton);
 
     JPanel classesCard = new JPanel();
-    classesCard.add(new JButton(commPic));
-    classesCard.add(new JButton(opPic));
-    classesCard.add(new JButton(corpPic));
-    classesCard.add(new JButton(specPic));
-    classesCard.add(new JButton(supPic));
-    classesCard.add(new JButton(hvyPic));
+    JButton commButton = new JButton(commPic);
+    commButton.addActionListener(new Listener());
+    classesCard.add(commButton);
+    JButton opButton = new JButton(opPic);
+    opButton.addActionListener(new Listener());
+    classesCard.add(opButton);
+    JButton corpButton = new JButton(corpPic);
+    corpButton.addActionListener(new Listener());
+    classesCard.add(corpButton);
+    JButton specButton = new JButton(specPic);
+    specButton.addActionListener(new Listener());
+    classesCard.add(specButton);
+    JButton supButton = new JButton(supPic);
+    supButton.addActionListener(new Listener());
+    classesCard.add(supButton);
+    JButton hvyButton = new JButton(hvyPic);
+    hvyButton.addActionListener(new Listener());
+    classesCard.add(hvyButton);
 
     cards = new JPanel(new CardLayout());
     cards.add(factionsCard, FactionsPanel);
@@ -79,6 +99,13 @@ public static void createAndShowGUI() throws IOException {
     gui.addComponentToPane(frame.getContentPane());
     frame.pack();
     frame.setVisible(true);
+}
+
+class Listener implements ActionListener {
+    @Override
+    public void actionPerformed(ActionEvent e){
+
+    }
 }
 
 public static void main(String[] args) {
