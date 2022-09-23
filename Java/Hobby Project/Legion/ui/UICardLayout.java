@@ -3,6 +3,10 @@ package ui;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+import separatists.Commander;
+import separatists.GenGrievous;
+
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -46,36 +50,76 @@ public void addComponentToPane(Container pane) throws IOException{
 
     JPanel factionsCard = new JPanel();
     JButton sepsButton = new JButton(sepsPic);
-    sepsButton.addActionListener(new Listener());
+    sepsButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Separatists!");
+        }
+    });
     factionsCard.add(sepsButton); 
     JButton garButton = new JButton(GARPic);
-    garButton.addActionListener(new Listener());
+    garButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Republic!");
+        }
+    });
     factionsCard.add(garButton);
     JButton rebsButton = new JButton(RebsPic);
-    rebsButton.addActionListener(new Listener());
+    rebsButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Rebels!");
+        }
+    });
     factionsCard.add(rebsButton);
     JButton impButton = new JButton(ImpPic);
-    impButton.addActionListener(new Listener());
+    impButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Empire!");
+        }
+    });
     factionsCard.add(impButton);
 
     JPanel classesCard = new JPanel();
     JButton commButton = new JButton(commPic);
-    commButton.addActionListener(new Listener());
+    commButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Commanders!");
+        }
+    });
     classesCard.add(commButton);
     JButton opButton = new JButton(opPic);
-    opButton.addActionListener(new Listener());
+    opButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Operatives!");
+        }
+    });
     classesCard.add(opButton);
     JButton corpButton = new JButton(corpPic);
-    corpButton.addActionListener(new Listener());
+    corpButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Corp!");
+        }
+    });
     classesCard.add(corpButton);
     JButton specButton = new JButton(specPic);
-    specButton.addActionListener(new Listener());
+    specButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Special Forces!");
+        }
+    });
     classesCard.add(specButton);
     JButton supButton = new JButton(supPic);
-    supButton.addActionListener(new Listener());
+    supButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Support!");
+        }
+    });
     classesCard.add(supButton);
     JButton hvyButton = new JButton(hvyPic);
-    hvyButton.addActionListener(new Listener());
+    hvyButton.addActionListener(new ActionListener() {
+        public void actionPerformed(ActionEvent e){
+        System.out.println("You've chosen Heavy!");
+        }
+    });
     classesCard.add(hvyButton);
 
     cards = new JPanel(new CardLayout());
@@ -84,6 +128,7 @@ public void addComponentToPane(Container pane) throws IOException{
 
     pane.add(comboBoxPane, BorderLayout.PAGE_START);
     pane.add(cards, BorderLayout.CENTER);
+
 }
 
 public void itemStateChanged(ItemEvent evt){
@@ -99,13 +144,6 @@ public static void createAndShowGUI() throws IOException {
     gui.addComponentToPane(frame.getContentPane());
     frame.pack();
     frame.setVisible(true);
-}
-
-class Listener implements ActionListener {
-    @Override
-    public void actionPerformed(ActionEvent e){
-
-    }
 }
 
 public static void main(String[] args) {
