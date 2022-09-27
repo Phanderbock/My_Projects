@@ -11,6 +11,7 @@ public class GenGrievous {
 				"Scale"};
 		Grievous.WeaponProfiles = new String[] {"Trophy Lightsaber", "Trophy Lightsaber"};
 		Grievous.UpgradeSlots = new String[] {"Command", "Command", "Armament", "Training"};
+		Grievous.ProfilePic = "C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/General Grievous.jpeg";
 					
 		Grievous.print();
 	}	
