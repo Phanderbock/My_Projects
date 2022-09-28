@@ -1,4 +1,4 @@
-package separatists;
+package separatists.Commanders;
 
 public class GenGrievous {
 	public static void main(String args[]){

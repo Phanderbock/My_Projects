@@ -1,4 +1,4 @@
-package separatists;
+package separatists.Commanders;
 import java.lang.reflect.Field;
 import java.util.*;
 
