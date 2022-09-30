@@ -4,8 +4,8 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-import separatists.Commander;
-import separatists.GenGrievous;
+import separatists.Commanders.Commander;
+import separatists.Commanders.GenGrievous;
 
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
@@ -15,8 +15,6 @@ import java.io.IOException;
 public class UICardLayout implements ItemListener{
 
 JPanel cards;
-final static String FactionsPanel = "Card with Factions";
-final static String ClassesPanel = "Card with Classes";
 
 public void addComponentToPane(Container pane) throws IOException{
     BufferedImage Logo1 = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/CIS.png"));
@@ -41,19 +39,79 @@ public void addComponentToPane(Container pane) throws IOException{
     ImageIcon supPic = new ImageIcon(supLogo);
     ImageIcon hvyPic = new ImageIcon(hvyLogo);
 
-    JPanel comboBoxPane = new JPanel();
-    String comboBoxItems[] = {FactionsPanel, ClassesPanel};
-    JComboBox cb = new JComboBox(comboBoxItems);
-    cb.setEditable(false);
-    cb.addItemListener(this);
-    comboBoxPane.add(cb);
+    String[] CommanderList;
+    String[] OperativeList;
+    String[] CorpList;
+
+
 
     JPanel factionsCard = new JPanel();
     JButton sepsButton = new JButton(sepsPic);
     sepsButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e){
         System.out.println("You've chosen Separatists!");
-        }
+        String[] CommanderList = new String[] {"General Grievous", "Count Dooku", "Kraken", "Kalani", "Super Tactical Droid", "T-Series Tactical Droid"};
+        String[] OperativeList = new String[] {"Darth Maul", "Cad Bane", "Bossk"};
+        String[] CorpList = new String[] {"B1 Battle Droids", "B2 Super Battle Droids"};
+        String[] SFList = new String[] {"BX-Series Droid Commandos Strike Team", "BX-Series Droid Commandos", "IG-100 MagnaGuard"};
+        String[] SupportList = new String[] {"Droidekas", "DSD1 Dwarf Spider Droid", "STAP Riders"};
+        String[] HeavyList = new String[] {"AAT Trade Federation Battle Tank", "NR-N99 Persuader-class Tank Droid"};
+        JPanel classesCard = new JPanel();
+
+        JButton goBack = new JButton("Go Back");
+        goBack.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                cards.add(factionsCard);
+                cards.remove(classesCard);
+            }
+        });
+        classesCard.add(goBack);
+        JButton commButton = new JButton(commPic);
+        commButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+            System.out.println("You've chosen Commanders!");
+            JPanel CommandersList = new JPanel();
+            }
+        });
+        classesCard.add(commButton);
+        JButton opButton = new JButton(opPic);
+        opButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+            System.out.println("You've chosen Operatives!");
+          }
+        });
+        classesCard.add(opButton);
+        JButton corpButton = new JButton(corpPic);
+        corpButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+            System.out.println("You've chosen Corp!");
+            }
+        });
+        classesCard.add(corpButton);
+        JButton specButton = new JButton(specPic);
+        specButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+            System.out.println("You've chosen Special Forces!");
+            }
+        });
+        classesCard.add(specButton);
+        JButton supButton = new JButton(supPic);
+        supButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+            System.out.println("You've chosen Support!");
+            }
+        });
+        classesCard.add(supButton);
+        JButton hvyButton = new JButton(hvyPic);
+        hvyButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+            System.out.println("You've chosen Heavy!");
+            }
+        });
+        classesCard.add(hvyButton);
+        cards.add(classesCard);
+        cards.remove(factionsCard);
+    }    
     });
     factionsCard.add(sepsButton); 
     JButton garButton = new JButton(GARPic);
@@ -78,55 +136,10 @@ public void addComponentToPane(Container pane) throws IOException{
     });
     factionsCard.add(impButton);
 
-    JPanel classesCard = new JPanel();
-    JButton commButton = new JButton(commPic);
-    commButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e){
-        System.out.println("You've chosen Commanders!");
-        }
-    });
-    classesCard.add(commButton);
-    JButton opButton = new JButton(opPic);
-    opButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e){
-        System.out.println("You've chosen Operatives!");
-        }
-    });
-    classesCard.add(opButton);
-    JButton corpButton = new JButton(corpPic);
-    corpButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e){
-        System.out.println("You've chosen Corp!");
-        }
-    });
-    classesCard.add(corpButton);
-    JButton specButton = new JButton(specPic);
-    specButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e){
-        System.out.println("You've chosen Special Forces!");
-        }
-    });
-    classesCard.add(specButton);
-    JButton supButton = new JButton(supPic);
-    supButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e){
-        System.out.println("You've chosen Support!");
-        }
-    });
-    classesCard.add(supButton);
-    JButton hvyButton = new JButton(hvyPic);
-    hvyButton.addActionListener(new ActionListener() {
-        public void actionPerformed(ActionEvent e){
-        System.out.println("You've chosen Heavy!");
-        }
-    });
-    classesCard.add(hvyButton);
+    
 
     cards = new JPanel(new CardLayout());
-    cards.add(factionsCard, FactionsPanel);
-    cards.add(classesCard, ClassesPanel);
-
-    pane.add(comboBoxPane, BorderLayout.PAGE_START);
+    cards.add(factionsCard);
     pane.add(cards, BorderLayout.CENTER);
 
 }
