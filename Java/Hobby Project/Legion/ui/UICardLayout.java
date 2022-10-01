@@ -5,6 +5,8 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
+import javax.smartcardio.Card;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
@@ -60,6 +62,34 @@ public void addComponentToPane(Container pane) throws IOException{
     BufferedImage DMaulImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Operative/Darth Maul.jpeg"));
     ImageIcon dMaulIcon = new ImageIcon(DMaulImg);
 
+    //Separatist Corp Images
+    BufferedImage B1Img = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Corp/B1 Battle Droids.jpeg"));
+    ImageIcon B1Icon = new ImageIcon(B1Img);
+    BufferedImage B2Img = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Corp/B2 Super Battle Droids.jpeg"));
+    ImageIcon B2Icon = new ImageIcon(B2Img);
+
+    //Separatists Special Forces Images
+    BufferedImage BXStrikeImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Specialist/BX-Series Droid Commandos Strike Team.jpeg"));
+    ImageIcon BXStrikeIcon = new ImageIcon(BXStrikeImg);
+    BufferedImage BXImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Specialist/BX-Series Droid Commandos.jpeg"));
+    ImageIcon BXIcon = new ImageIcon(BXImg);
+    BufferedImage IG100Img = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Specialist/IG-100 MagnaGuard.jpeg"));
+    ImageIcon IG100Icon = new ImageIcon(IG100Img);
+
+    //Separatist Support Images
+    BufferedImage DroidekaImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Support/Droidekas.jpeg"));
+    ImageIcon DroidekaIcon = new ImageIcon(DroidekaImg);
+    BufferedImage DSD1Img = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Support/DSD1 Dwarf Spider Droid.jpeg"));
+    ImageIcon DSD1Icon = new ImageIcon(DSD1Img);
+    BufferedImage STAPImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Support/STAP Riders.jpeg"));
+    ImageIcon STAPIcon = new ImageIcon(STAPImg);
+
+    //Separatist Heavy Images
+    BufferedImage AATImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Heavy/AAT Trade Federation Battle Tank.jpeg"));
+    ImageIcon AATIcon = new ImageIcon(AATImg);
+    BufferedImage NRImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Heavy/NR-N99 Persuader-class Tank Droid.jpeg"));
+    ImageIcon NRIcon = new ImageIcon(NRImg);
+
 
 
     JPanel factionsCard = new JPanel();
@@ -79,6 +109,7 @@ public void addComponentToPane(Container pane) throws IOException{
             }
         });
         classesCard.add(goBack);
+
         JButton commButton = new JButton(commPic);
         commButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
@@ -100,6 +131,7 @@ public void addComponentToPane(Container pane) throws IOException{
             }
         });
         classesCard.add(commButton);
+
         JButton opButton = new JButton(opPic);
         opButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
@@ -115,31 +147,64 @@ public void addComponentToPane(Container pane) throws IOException{
           }
         });
         classesCard.add(opButton);
+
         JButton corpButton = new JButton(corpPic);
         corpButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
             System.out.println("You've chosen Corp!");
+            CardList.removeAll();
+            JButton B1Button = new JButton(B1Icon);
+            JButton B2Button = new JButton(B2Icon);
+            CardList.add(B1Button);
+            CardList.add(B2Button);
+            classesCard.validate();
+
             }
         });
         classesCard.add(corpButton);
+
         JButton specButton = new JButton(specPic);
         specButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
             System.out.println("You've chosen Special Forces!");
+            CardList.removeAll();
+            JButton BXStrikeButton = new JButton(BXStrikeIcon);
+            JButton BXDroidsButton = new JButton(BXIcon);
+            JButton MagnaButton = new JButton(IG100Icon);
+            CardList.add(BXStrikeButton);
+            CardList.add(BXDroidsButton);
+            CardList.add(MagnaButton);
+            classesCard.validate();
             }
         });
         classesCard.add(specButton);
+
         JButton supButton = new JButton(supPic);
         supButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
             System.out.println("You've chosen Support!");
+            CardList.removeAll();
+            JButton DroidekaButton = new JButton(DroidekaIcon);
+            JButton DSD1Button = new JButton(DSD1Icon);
+            JButton STAPButton = new JButton(STAPIcon);
+            CardList.add(DroidekaButton);
+            CardList.add(DSD1Button);
+            CardList.add(STAPButton);
+            classesCard.validate();
             }
         });
         classesCard.add(supButton);
+
         JButton hvyButton = new JButton(hvyPic);
         hvyButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
             System.out.println("You've chosen Heavy!");
+            CardList.removeAll();
+            JButton AATButton = new JButton(AATIcon);
+            JButton NRButton = new JButton(NRIcon);
+            CardList.add(AATButton);
+            CardList.add(NRButton);
+            classesCard.validate();
             }
         });
         classesCard.add(hvyButton);
