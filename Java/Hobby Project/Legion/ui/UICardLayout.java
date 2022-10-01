@@ -3,20 +3,18 @@ package ui;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
-import separatists.Commanders.Commander;
-import separatists.Commanders.GenGrievous;
-
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class UICardLayout implements ItemListener{
 
 JPanel cards;
 
 public void addComponentToPane(Container pane) throws IOException{
+    //Generate Faction Images
     BufferedImage Logo1 = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/CIS.png"));
 	ImageIcon sepsPic = new ImageIcon(Logo1);
 	BufferedImage Logo2 = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/GAR.png"));
@@ -26,6 +24,7 @@ public void addComponentToPane(Container pane) throws IOException{
 	BufferedImage Logo4 = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/Rebels.png"));
 	ImageIcon RebsPic = new ImageIcon(Logo4);
 
+    //Generate Class Images
 	BufferedImage commLogo = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/Commander.png"));
 	BufferedImage opLogo = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/Operative.png"));
 	BufferedImage corpLogo = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/ui/corp.png"));
@@ -39,9 +38,27 @@ public void addComponentToPane(Container pane) throws IOException{
     ImageIcon supPic = new ImageIcon(supLogo);
     ImageIcon hvyPic = new ImageIcon(hvyLogo);
 
-    String[] CommanderList;
-    String[] OperativeList;
-    String[] CorpList;
+    //Separatist Commander Images
+    BufferedImage GrievousImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/General Grievous.jpeg"));
+    ImageIcon GrievousIcon = new ImageIcon(GrievousImg);
+    BufferedImage DookuImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/Count Dooku.jpeg"));
+    ImageIcon DookuIcon = new ImageIcon(DookuImg);
+    BufferedImage KalaniImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/kalani.jpeg"));
+    ImageIcon KalaniIcon = new ImageIcon(KalaniImg);
+    BufferedImage KrakenImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/Kraken.jpeg"));
+    ImageIcon KrakenIcon = new ImageIcon(KrakenImg);
+    BufferedImage STacImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/Super Tactical Droid.jpeg"));
+    ImageIcon STacIcon = new ImageIcon(STacImg);
+    BufferedImage TTacImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Commander/T-Series Tactical Droid.jpeg"));
+    ImageIcon TTacIcon = new ImageIcon(TTacImg);
+
+    //Separatist Operative Images
+    BufferedImage BosskImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Operative/Bossk.jpeg"));
+    ImageIcon BosskIcon = new ImageIcon(BosskImg);
+    BufferedImage BaneImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Operative/Cad Bane.jpeg"));
+    ImageIcon BaneIcon = new ImageIcon(BaneImg);
+    BufferedImage DMaulImg = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/Legion/Legion Reference Docs/Separatists/Unit Cards/Operative/Darth Maul.jpeg"));
+    ImageIcon dMaulIcon = new ImageIcon(DMaulImg);
 
 
 
@@ -50,13 +67,9 @@ public void addComponentToPane(Container pane) throws IOException{
     sepsButton.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e){
         System.out.println("You've chosen Separatists!");
-        String[] CommanderList = new String[] {"General Grievous", "Count Dooku", "Kraken", "Kalani", "Super Tactical Droid", "T-Series Tactical Droid"};
-        String[] OperativeList = new String[] {"Darth Maul", "Cad Bane", "Bossk"};
-        String[] CorpList = new String[] {"B1 Battle Droids", "B2 Super Battle Droids"};
-        String[] SFList = new String[] {"BX-Series Droid Commandos Strike Team", "BX-Series Droid Commandos", "IG-100 MagnaGuard"};
-        String[] SupportList = new String[] {"Droidekas", "DSD1 Dwarf Spider Droid", "STAP Riders"};
-        String[] HeavyList = new String[] {"AAT Trade Federation Battle Tank", "NR-N99 Persuader-class Tank Droid"};
         JPanel classesCard = new JPanel();
+        JPanel CardList = new JPanel();
+        CardList.setLayout(new GridLayout(0, 3));
 
         JButton goBack = new JButton("Go Back");
         goBack.addActionListener(new ActionListener(){
@@ -70,7 +83,20 @@ public void addComponentToPane(Container pane) throws IOException{
         commButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
             System.out.println("You've chosen Commanders!");
-            JPanel CommandersList = new JPanel();
+            CardList.removeAll();
+            JButton grievousButton = new JButton(GrievousIcon);
+            JButton dookuButton = new JButton(DookuIcon);
+            JButton kalaniButton = new JButton(KalaniIcon);
+            JButton krakenButton = new JButton(KrakenIcon);
+            JButton sTacButton = new JButton(STacIcon);
+            JButton tTacButton = new JButton(TTacIcon);
+            CardList.add(grievousButton);
+            CardList.add(dookuButton);
+            CardList.add(kalaniButton);
+            CardList.add(krakenButton);
+            CardList.add(sTacButton);
+            CardList.add(tTacButton);
+            classesCard.validate();
             }
         });
         classesCard.add(commButton);
@@ -78,6 +104,14 @@ public void addComponentToPane(Container pane) throws IOException{
         opButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
             System.out.println("You've chosen Operatives!");
+            CardList.removeAll();
+            JButton bosskButton = new JButton(BosskIcon);
+            JButton baneButton = new JButton(BaneIcon);
+            JButton dmaulButton = new JButton(dMaulIcon);
+            CardList.add(bosskButton);
+            CardList.add(baneButton);
+            CardList.add(dmaulButton);
+            classesCard.validate();
           }
         });
         classesCard.add(opButton);
@@ -109,6 +143,7 @@ public void addComponentToPane(Container pane) throws IOException{
             }
         });
         classesCard.add(hvyButton);
+        classesCard.add(CardList);
         cards.add(classesCard);
         cards.remove(factionsCard);
     }    
@@ -155,7 +190,7 @@ public static void createAndShowGUI() throws IOException {
 
     UICardLayout gui = new UICardLayout();
     gui.addComponentToPane(frame.getContentPane());
-    frame.pack();
+    frame.setExtendedState(JFrame.MAXIMIZED_BOTH); 
     frame.setVisible(true);
 }
 
