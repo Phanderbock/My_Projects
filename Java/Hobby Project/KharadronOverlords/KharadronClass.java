@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 
 
 public class KharadronClass implements ItemListener {
@@ -16,6 +15,14 @@ public class KharadronClass implements ItemListener {
         //Opening image
         BufferedImage coverImage = ImageIO.read(new File("C:/Users/Brennan/Documents/Github/My_Projects/Java/Hobby Project/KharadronOverlords/ko_cover.jpg"));
         ImageIcon coverIcon = new ImageIcon(coverImage);
+
+        JPanel coverPanel = new JPanel();
+        JLabel coverLabel = new JLabel(coverIcon);
+        coverPanel.add(coverLabel);
+
+        basePanel = new JPanel(new CardLayout());
+        basePanel.add(coverPanel);
+        pane.add(basePanel, BorderLayout.CENTER);
 
     }
     public void itemStateChanged(ItemEvent evt){
