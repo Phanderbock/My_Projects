@@ -5,8 +5,6 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
-import javax.smartcardio.Card;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
