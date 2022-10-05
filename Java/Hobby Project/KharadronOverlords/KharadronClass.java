@@ -17,8 +17,26 @@ public class KharadronClass implements ItemListener {
         ImageIcon coverIcon = new ImageIcon(coverImage);
 
         JPanel coverPanel = new JPanel();
-        JLabel coverLabel = new JLabel(coverIcon);
-        coverPanel.add(coverLabel);
+        JPanel buttonsPanel = new JPanel();
+        JButton coverButton = new JButton(coverIcon);
+        coverButton.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                basePanel.add(buttonsPanel);
+                basePanel.remove(coverPanel);
+                basePanel.validate();
+            }
+        });
+
+        JButton points = new JButton("Points");
+
+        JButton warscrolls = new JButton("Warscrolls");
+
+        JButton battalions = new JButton("Battalions");
+
+        coverPanel.add(coverButton, BorderLayout.NORTH);
+        buttonsPanel.add(points);
+        buttonsPanel.add(warscrolls);
+        buttonsPanel.add(battalions);
 
         basePanel = new JPanel(new CardLayout());
         basePanel.add(coverPanel);
